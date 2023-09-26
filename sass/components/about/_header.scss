@@ -1,0 +1,37 @@
+header {
+   background-image: url(../../../images/local-food-singapore.webp);
+   height: 90vh;
+}
+header .text {
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .text .info {
+    background-color: #67200268;
+    padding: 50px 150px;
+    text-align: center;
+    border-radius: 20px;
+}
+header .text .info h1{
+    font-size: 90px;
+    color: white;
+}
+header .text .info span{
+    font-size: 25px;
+    color: white;
+}
+header .text .info p{
+    font-size: 30px;
+    color: white;
+    padding-bottom: 20px;
+}
+header .text .info button{
+    padding: 20px 50px;
+    background-color: orange;
+    font-size: 25px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
