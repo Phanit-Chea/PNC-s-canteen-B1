@@ -52,7 +52,7 @@ nav .nav-right ul li a {
 
 form {
   width: 50%;
-  background-color: rgba(139, 124, 133, 0);
+  background-color: rgba(220, 26, 142, 0);
   gap: 20px;
   display: flex;
   flex-direction: column;
@@ -62,8 +62,8 @@ form {
 form button {
   width: 30%;
   height: 50px;
-  background-color: orange;
-  color: white;
+  background-color: rgb(0, 30, 255);
+  color: rgb(255, 255, 255);
   margin-left: 10px;
 }
 
@@ -72,7 +72,7 @@ form button {
   flex-direction: column;
   gap: 7px;
   position: relative;
-  color: white;
+  color: rgba(255, 255, 255, 0.594);
 }
 
 .container .label {
@@ -90,13 +90,13 @@ form button {
   border: none;
   padding: 0px 7px;
   border-radius: 6px;
-  color: #ffffff;
-  background-color: rgb(251, 251, 251);
+  color: rgba(203, 168, 168, 0.8274509804);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .input:focus {
   border: 2px solid transparent;
-  color: #fff;
+  color: #010101;
 }
 
 .container .input:valid ~ .label,
@@ -111,7 +111,7 @@ form button {
 }
 
 .label {
-  color: rgb(0, 0, 0);
+  color: rgb(7, 3, 3);
 }
 
 header {
@@ -147,4 +147,4 @@ p {
   display: flex;
   justify-content: center;
   text-align: center;
-}
+}/*# sourceMappingURL=contact.css.map */
