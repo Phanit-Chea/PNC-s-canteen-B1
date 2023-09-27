@@ -1,5 +1,5 @@
 .dinner{
-    // background-color: teal;
+
     padding: 20px 100px;
 }
 .dinner .text-dinner .text-top{
@@ -26,39 +26,52 @@
 .dinner .bottom .fried-food .name-food:nth-child(1) .pic img{
     width: 380px;
 }
+
 .soup h3{
     text-align: center;
-    background-color: teal;
+    padding-top: 20px;
 }
 .dinner .soup .g-food {
     display: flex;
     padding-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
-.dinner .soup .g-food .c-food1{
+.dinner .soup .g-food .c-food1,.soup .g-food .c-food3{
     display: flex;
     align-items: center;
 }
-.dinner .soup .g-food .c-food1 img {
+.dinner .soup .g-food .c-food1 img ,.dinner .soup .g-food .c-food2 img,.soup .g-food .c-food3 img {
     width: 350px;
     padding-right: 20px;
 }
-.dinner .soup .g-food .c-food1 .line {
+.dinner .soup .g-food .c-food1 .line,.soup .g-food .c-food3 .line {
     background-color: orange;
     height: 350px;
     padding: 4px;
     border-radius: 20px;
 }
-.dinner .soup .g-food .c-food1 .name {
-    padding-left: 30px;
+.dinner .soup .g-food .c-food2 .line{
+    background-color: orange;
+    height: 2vh;
+    border-radius: 20px;
 }
-.dinner .soup .g-food .c-food1 .name h2 {
+.dinner .soup .g-food .c-food1 .name,.dinner .soup .g-food .c-food2,.soup .g-food .c-food3  {
+    padding-left: 30px;
+    text-align: center;
+}
+.dinner .soup .g-food .c-food1 .name h2,.dinner ,.soup .g-food .c-food2 .name h2,.soup .g-food .c-food3 .name h2 {
     font-size: 28px;
 }
-.dinner .soup .g-food .c-food1 .name h4 {
+.dinner .soup .g-food .c-food1 .name h4,.dinner .soup .g-food .c-food2 .name h4,.soup .g-food .c-food3 .name h4 {
     color: orange;
     font-size: 22px;
 }
-.dinner .soup .g-food .c-food1 .name ul li {
+.dinner .soup .g-food .c-food1 .name ul li ,.dinner ,.soup .g-food .c-food2 .name ul li,.soup .g-food .c-food3 .name ul li{
     font-size: 18px;
     padding-top: 5px;
+}
+.soup .g-food .c-food3 .name {
+    padding: 20px;
 }
