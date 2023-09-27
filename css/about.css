@@ -155,7 +155,7 @@ header .text .info button {
 }
 
 .food img {
-  width: 300px;
+  width: 200px;
   border-radius: 300px;
 }
 
@@ -243,7 +243,7 @@ header .text .info button {
 }
 
 .fried-food .name-food .pic img {
-  width: 350px;
+  width: 250px;
 }
 
 .fried-food .name-food .name h2,
@@ -292,20 +292,19 @@ header .text .info button {
 .soup-food .food-group .top {
   background-color: orange;
   height: 7vh;
-  width: 380px;
   border-radius: 20px;
   position: relative;
   top: 210px;
 }
 
 .soup-food .food-group .center img {
-  width: 320px;
+  width: 250px;
   position: relative;
 }
 
 .soup-food .food-group .card-food:nth-child(1) .center img,
 .soup-food .food-group .card-food:nth-child(5) .center img {
-  width: 360px;
+  width: 280px;
 }
 
 .soup-food .food-group .card-food .name {
@@ -408,4 +407,4 @@ header .text .info button {
 
 .soup .g-food .c-food3 .name {
   padding: 20px;
-}/*# sourceMappingURL=about.css.map */
+}# sourceMappingURL=about.css.map
