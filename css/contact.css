@@ -91,7 +91,7 @@ form button {
   padding: 0px 7px;
   border-radius: 6px;
   color: #ffffff;
-  background-color: rgb(251, 251, 251);
+  background-color: rgb(204, 11, 11);
 }
 
 .input:focus {
@@ -147,4 +147,4 @@ p {
   display: flex;
   justify-content: center;
   text-align: center;
-}
+}/*# sourceMappingURL=contact.css.map */
