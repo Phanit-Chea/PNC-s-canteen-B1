@@ -83,6 +83,7 @@ header .text .info button {
 }
 
 .text-breakfast {
+  background-color: rgba(245, 222, 179, 0.687);
   padding: 20px 100px;
 }
 
@@ -99,22 +100,32 @@ header .text .info button {
 
 .text-left img {
   width: 90%;
+  border: 4px solid orange;
 }
 
 .text-right {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .text-right p {
   text-align: center;
   font-size: 25px;
+  padding-bottom: 10px;
 }
 
 .text-right p span {
   color: orange;
   font-weight: bold;
+}
+
+.text-right button {
+  background-color: rgba(245, 222, 179, 0.411);
+  padding: 20px;
+  font-size: 20px;
+  border: none;
 }
 
 .menu-breakfast {
@@ -134,7 +145,7 @@ header .text .info button {
 }
 
 .menu-breakfast .food:hover {
-  border: 4px solid rgb(7, 81, 218);
+  background-color: orange;
 }
 
 .food img {
@@ -157,7 +168,7 @@ header .text .info button {
 
 .food .ingredient {
   text-align: center;
-  font-size: 25px;
+  font-size: 18px;
 }
 
 .button {
@@ -175,6 +186,206 @@ header .text .info button {
   border-radius: 10px;
 }
 
-.menu-lunch {
+.food:nth-child(1), .food:nth-child(4) {
+  padding-top: 90px;
+}
+
+.lunch {
+  background-color: rgba(245, 222, 179, 0.573);
+  padding: 20px 100px;
+}
+
+.top {
+  padding-top: 20px;
+}
+
+.image {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lunch .top img {
+  width: 350px;
+  height: 350px;
+  border: 4px solid orange;
+}
+
+.lunch .top .text {
+  display: flex;
+  padding: 20px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.lunch .top .text p span {
+  color: orange;
+  font-weight: bold;
+}
+
+.bottom h3 {
+  text-align: center;
+  color: orange;
+  font-size: 25px;
+}
+
+.fried-food {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.fried-food .name-food .pic img {
+  width: 350px;
+}
+
+.fried-food .name-food .name h2,
+.fried-food .name-food .ingredient,
+.soup-food .food-group .card-food .name h2,
+.soup-food .food-group .card-food .info-food {
+  text-align: center;
+  padding: 20px;
+}
+
+.fried-food .name-food .name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: orange;
+  border-radius: 20px;
+  height: 8vh;
+}
+
+.fried-food .name-food .name h2 {
+  font-size: 28px;
+}
+
+.fried-food .name-food .ingredient,
+.soup-food .food-group .card-food .info-food {
+  font-size: 18px;
+}
+
+.fried-food .name-food .ingredient h4,
+.soup-food .food-group .card-food .info-food h4 {
+  color: orange;
+  font-size: 22px;
+}
+
+.soup-food .food-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.soup-food .food-group .card-food {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.soup-food .food-group .top {
+  background-color: orange;
+  height: 7vh;
+  width: 380px;
+  border-radius: 20px;
+  position: relative;
+  top: 210px;
+}
+
+.soup-food .food-group .center img {
+  width: 320px;
+  position: relative;
+}
+
+.soup-food .food-group .card-food:nth-child(1) .center img,
+.soup-food .food-group .card-food:nth-child(5) .center img {
+  width: 360px;
+}
+
+.soup-food .food-group .card-food .name {
+  background-color: orange;
+  border-radius: 20px;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dinner {
+  padding: 20px 100px;
+}
+
+.dinner .text-dinner .text-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.dinner .text-dinner .text-top img:nth-child(1), .dinner .text-dinner .text-top img:nth-child(3) {
+  width: 300px;
+}
+
+.dinner .text-dinner .text-bottom p {
+  font-size: 25px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.dinner .text-dinner .text-bottom p span {
+  color: orange;
+  font-weight: bold;
+}
+
+.dinner .bottom {
+  padding-top: 30px;
+}
+
+.dinner .bottom .fried-food .name-food:nth-child(1) .pic img {
+  width: 380px;
+}
+
+.soup h3 {
+  text-align: center;
   background-color: teal;
+}
+
+.dinner .soup .g-food {
+  display: flex;
+  padding-top: 20px;
+}
+
+.dinner .soup .g-food .c-food1 {
+  display: flex;
+  align-items: center;
+}
+
+.dinner .soup .g-food .c-food1 img {
+  width: 350px;
+  padding-right: 20px;
+}
+
+.dinner .soup .g-food .c-food1 .line {
+  background-color: orange;
+  height: 350px;
+  padding: 4px;
+  border-radius: 20px;
+}
+
+.dinner .soup .g-food .c-food1 .name {
+  padding-left: 30px;
+}
+
+.dinner .soup .g-food .c-food1 .name h2 {
+  font-size: 28px;
+}
+
+.dinner .soup .g-food .c-food1 .name h4 {
+  color: orange;
+  font-size: 22px;
+}
+
+.dinner .soup .g-food .c-food1 .name ul li {
+  font-size: 18px;
+  padding-top: 5px;
 }
