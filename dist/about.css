@@ -274,9 +274,8 @@ header .text .info button {
   font-size: 22px;
 }
 
-.soup-food .food-group {
-  display: flex;
-  flex-wrap: wrap;
+.soup-food {
+  background-color: teal;
 }
 
 .soup-food .food-group .card-food {

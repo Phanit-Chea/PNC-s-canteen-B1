@@ -79,12 +79,14 @@
     color: orange;
     font-size: 22px;
 }
-
-.soup-food .food-group {
-    display: flex;
-    flex-wrap: wrap;
-
+.soup-food {
+background-color: teal;
 }
+// .soup-food .food-group {
+//     display: flex;
+//     flex-wrap: wrap;
+
+// }
 
 .soup-food .food-group .card-food {
     display: flex;
@@ -120,3 +122,34 @@
     align-items: center;
     justify-content: center;
 }
+.dinner {
+    padding: 20px 100px;
+  }
+  .dinner .text-dinner {
+    display: flex;
+    padding-top: 20px;
+  }
+  .dinner .text-dinner .text-top img{
+    border: 4px solid rgb(15, 79, 163);
+  }
+  .dinner .text-dinner .text-top .box1{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+  }
+  .dinner .text-dinner .text-top .box1 img{
+    width: 300px;
+    height: 200px;
+  }
+  .dinner .text-dinner .text-bottom{
+    padding-left: 20px;
+  }
+  .dinner .text-dinner .text-bottom p {
+    font-size: 25px;
+    padding-top: 20px;
+    text-align: center;
+  }
+  .dinner .text-dinner .text-bottom p:nth-child(2){
+    background-color:  rgba(245, 222, 179, 0.573);
+    padding: 10px;
+  }
