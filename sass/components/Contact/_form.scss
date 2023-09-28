@@ -6,7 +6,7 @@
 
 form {
     width: 50%;
-    background-color: rgba(220, 26, 142, 0);
+    background-color: rgba(212, 149, 187, 0.126);
     gap: 20px;
     display: flex;
     flex-direction: column;
@@ -21,48 +21,43 @@ form button {
     margin-left: 10px;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
+.input-group {
     position: relative;
-    color: rgba(255, 255, 255, 0.594);
-}
-
-.container .label {
-    font-size: 20px;
-    padding-left: 10px;
+    border-radius: 100px;
+   }
+   
+   .input {
+    width: 90%;
+    border: solid 1.5px #fa880e;
+    border-radius: 1rem;
+    background: rgba(224, 206, 107, 0.694);
+    padding: 1rem;
+    font-size: 1rem;
+    color: #ffffff;
+    transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+   }
+   
+   .user-label {
     position: absolute;
-    top: 13px;
-    transition: 0.3s;
+    left: 15px;
+    color: #000000;
     pointer-events: none;
-}
+    transform: translateY(1rem);
+    transition: 150ms cubic-bezier(0.4,0,0.2,1);
+   }
+   
+   .input:focus, input:valid {
+    outline: none;
+    border: 1.5px solid #0066ec81;
+   }
+   
+   .input:focus ~ label, input:valid ~ label {
+    transform: translateY(-50%) scale(0.8);
+    background-color: #010000;
+    padding: 0 .2em;
+    color: #008cff;
+   }
+   .input-group:nth-child(6) input[type=text]{
+    height: 20vh;
 
-.input {
-    width: 200px;
-    height: 45px;
-    border: none;
-    padding: 0px 7px;
-    border-radius: 6px;
-    color: #cba8a8d3;
-    background-color:rgba(255, 255, 255, 0.7);
-}
-
-.input:focus {
-    border: 2px solid transparent;
-    color: #010101;
-}
-
-.container .input:valid~.label,
-.container .input:focus~.label {
-    transition: 0.3s;
-    padding-left: 2px;
-    transform: translateY(-35px);
-}
-
-.container .input{
-    width: 100%;
-}
-.label{
-    color: rgb(7, 3, 3);
-}
+   }
