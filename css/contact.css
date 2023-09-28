@@ -38,6 +38,38 @@ nav .nav-right ul li a {
   font-weight: bold;
 }
 
+footer {
+  background-image: linear-gradient(rgb(123, 196, 224), rgb(94, 94, 177));
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  height: 35vh;
+}
+
+footer h2,
+footer p {
+  color: white;
+  padding: 10px;
+}
+
+.media-images,
+.media-name {
+  width: 50px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+.social-media img:nth-child(1),
+.social-media img:nth-child(2),
+.social-media img:nth-child(3) {
+  width: 40px;
+}
+
 .feedback {
   display: flex;
   padding: 30px;
@@ -112,24 +144,24 @@ header {
   display: flex;
 }
 
-main {
+.main {
   background-color: rgba(17, 26, 49, 0.44);
   width: 50%;
   display: flex;
   flex-direction: column;
 }
 
-main h1 {
+.main h1 {
   font-size: 90px;
   color: white;
 }
 
-main p {
+.main p {
   color: white;
   font-size: 25px;
 }
 
-main,
+.main,
 h1,
 p {
   display: flex;
