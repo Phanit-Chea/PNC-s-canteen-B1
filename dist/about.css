@@ -184,18 +184,18 @@ header .text .info a button {
 }
 
 .menu-breakfast {
+  padding: 20px 100px;
   display: flex;
   flex-direction: column;
-  padding: 20px 100px;
 }
 
 .menu-breakfast h1 {
   background-color: rgba(98, 150, 217, 0.603);
   padding: 10px;
-  color: black;
+  color: rgb(24, 22, 22);
   width: 30%;
-  border-bottom: 4px solid rgb(15, 79, 163);
   border-top: 4px solid rgb(15, 79, 163);
+  border-bottom: 4px solid rgb(15, 79, 163);
   font-size: 28px;
 }
 
@@ -217,8 +217,8 @@ header .text .info a button {
 }
 
 .btn {
-  background-color: orange;
   padding: 20px 100px;
+  background-color: orange;
   font-size: 25px;
   color: white;
   border-radius: 10px;
@@ -243,8 +243,8 @@ header .text .info a button {
 
 .lunch .top .image {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
   padding-top: 20px;
 }
 
@@ -265,9 +265,9 @@ header .text .info a button {
 }
 
 .bottom {
-  padding-top: 20px;
   display: flex;
   flex-direction: column;
+  padding-top: 20px;
 }
 
 .bottom h3 {
@@ -280,7 +280,6 @@ header .text .info a button {
 .fried-food {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -394,13 +393,11 @@ img:hover {
   align-items: center;
   justify-content: center;
   padding-left: 20px;
+  font-size: 20px;
 }
 
 .dinner .text-dinner .text-bottom p {
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  font-size: 25px;
+  font-size: 20px;
   padding-top: 20px;
 }
 

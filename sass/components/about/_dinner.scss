@@ -1,5 +1,4 @@
-@import "../../group-mixin/variable";
-@import "../../group-mixin/mixin";
+
 
 .dinner {
   @include padding;
@@ -31,10 +30,12 @@
 .dinner .text-dinner .text-bottom {
   @include style-center;
   padding-left: 20px;
+  font-size: 20px;
 }
 
 .dinner .text-dinner .text-bottom p {
-  @include align-text;
+  // @include align-text;
+  font-size: 20px;
   padding-top: 20px;
 }
 

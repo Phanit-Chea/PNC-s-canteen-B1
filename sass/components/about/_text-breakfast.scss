@@ -1,5 +1,8 @@
+@import "../../group-mixin/variable";
+@import "../../group-mixin/mixin";
+
 .text-breakfast {
-    padding: 20px 100px;
+    @include padding;
 }
 .text-breakfast h1 {
     text-align: center;
@@ -16,10 +19,8 @@
 
 }
 .text-right{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    @include df-column;
+    @include style-center;
 }
 .text-right p{
     text-align: center;
@@ -27,27 +28,20 @@
     padding-bottom: 10px;
 }
 .text-right p span{
-    color:$orange;
-    font-weight: bold;
+    @include text-contrast;
 }
 .text-right button {
+    @include button;
     background-color:$dinner-bg;
     padding: 20px;
-    font-size: 20px;
-    border: none;
+    
 }
 .price {
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include style-center;
+    // padding: 20px;
 }
 .price p {
-    padding: 4px;
-    border-radius: 10px;
-    border: 4px solid$orange;
-    width: 60px;
-    text-align: center;
+    @include price-text;
   }
   .price p:hover{
     background-color:$orange;
