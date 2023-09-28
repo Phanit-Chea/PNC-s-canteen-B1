@@ -1,6 +1,14 @@
 .lunch {
-    background-color: rgba(245, 222, 179, 0.573);
+    // background-color: rgba(245, 222, 179, 0.573);
     padding: 20px 100px;
+}
+.lunch h1 {
+    background-color:  rgba(98, 150, 217, 0.603);
+    padding: 10px;
+    color: rgb(24, 22, 22);
+    width: 30%;
+    border-top: 4px solid rgb(15, 79, 163);
+    border-bottom: 4px solid rgb(15, 79, 163);
 }
 .lunch .top .image{
     display: flex;
@@ -9,7 +17,6 @@
     padding-top: 20px;
 }
 .lunch .top img {
-    border: 4px solid rgb(53, 115, 173);
     width: 360px;
 }
 .top .text {
@@ -28,9 +35,10 @@
     flex-direction: column;
 }
 .bottom h3{
-    font-size:28px;
+    font-size:30px;
     text-align: center;
     color: orange;
+    padding: 20px;
 }
 .fried-food {
     display: flex;
@@ -39,7 +47,17 @@
     justify-content: space-between;
 }
 .fried-food .name-food .pic img{
-    width: 280px;
+    width: 260px;
+    height: 230px;
+
+}
+.fried-food .name-food:hover{
+    background-color: white;
+    border: 4px solid orange;
+    padding: 5px;
+    border-top-left-radius: 20px ;
+    border-bottom-right-radius: 20px ;
+    box-shadow: 2px 4px 10px orange;
 }
 .fried-food .name-food:nth-child(1) .pic img{
     width: 260px;
@@ -51,10 +69,16 @@
     text-align: center;
     border-radius: 20px;
 }
+.fried-food .name-food .name,.soup-food .food-group .card-food .name:hover {
+    background-color: white;
+}
 .fried-food .name-food .ingredient {
     text-align: center;
     border: 4px solid orange;
     border-radius:20px ;
+}
+.fried-food .name-food .ingredient:hover{
+    border: none;
 }
 .soup-food .food-group{
     display: flex;
@@ -62,16 +86,22 @@
     justify-content: space-between;
     padding-top: 20px;
 }
-.soup-food .food-group .card-food{
-    border: 4px solid rgb(53, 115, 173);
+.soup-food .food-group .card-food:hover{
+    background-color: white;
+    padding: 10px;
 }
 .soup-food .food-group .card-food .center img {
-    width: 270px;
+    width: 230px;
+    height: 230px;
 }
 .soup-food .food-group .card-food .ingredient{
     text-align: center;
     padding-top: 20px;
 }
 .soup-food .food-group .card-food:nth-child(1) .center img {
-    width: 300px;
+    width: 240px;
 }
+img:hover {
+    box-shadow: 2px 4px 10px orange;
+}
+
