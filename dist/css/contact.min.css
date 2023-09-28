@@ -112,24 +112,24 @@ header {
   display: flex;
 }
 
-main {
+.main {
   background-color: rgba(17, 26, 49, 0.44);
   width: 50%;
   display: flex;
   flex-direction: column;
 }
 
-main h1 {
+.main h1 {
   font-size: 90px;
   color: white;
 }
 
-main p {
+.main p {
   color: white;
   font-size: 25px;
 }
 
-main,
+.main,
 h1,
 p {
   display: flex;
