@@ -129,7 +129,7 @@ header .text .info button {
   width: 33%;
   position: absolute;
   right: 260px;
-  top: 450px;
+  top: 870px;
   cursor: pointer;
 }
 
@@ -144,7 +144,7 @@ header .text .info button {
   width: 26%;
   position: absolute;
   right: 300px;
-  top: 860px;
+  top: 1280px;
   cursor: pointer;
 }
 
@@ -159,7 +159,7 @@ header .text .info button {
   width: 22%;
   position: absolute;
   right: 340px;
-  top: 1230px;
+  top: 1685px;
   cursor: pointer;
 }
 
