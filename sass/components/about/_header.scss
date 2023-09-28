@@ -10,9 +10,6 @@ html{
 header .text {
     @include style-center;
     padding-top: 60px;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
 }
 header .text .info {
     background-color: $nav-bg;
@@ -25,7 +22,7 @@ header .text .info h1{
     color: $white;
 }
 header .text .info span{
-    font-size: 25px;
+    font-size: 18px;
     color: $white;
 }
 header .text .info p{
@@ -38,7 +35,5 @@ header .text .info a button{
     padding: 20px 50px;
     background-color: $orange;
     font-size: 25px;
-    // border: none;
-    // border-radius: 20px;
     color: $white;
 }

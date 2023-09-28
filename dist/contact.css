@@ -7,12 +7,6 @@
   color: black;
 }
 
-.ingredient {
-  padding: 10px;
-  border-radius: 10px;
-  border: 4px solid orange;
-}
-
 nav {
   display: flex;
   background-color: rgba(103, 32, 2, 0.6509803922);
@@ -44,6 +38,38 @@ nav .nav-right ul li a {
   font-weight: bold;
 }
 
+footer {
+  background-image: linear-gradient(rgb(123, 196, 224), rgb(94, 94, 177));
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  height: 35vh;
+}
+
+footer h2,
+footer p {
+  color: white;
+  padding: 10px;
+}
+
+.media-images,
+.media-name {
+  width: 50px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+.social-media img:nth-child(1),
+.social-media img:nth-child(2),
+.social-media img:nth-child(3) {
+  width: 40px;
+}
+
 .feedback {
   display: flex;
   padding: 30px;
@@ -52,7 +78,7 @@ nav .nav-right ul li a {
 
 form {
   width: 50%;
-  background-color: rgba(220, 26, 142, 0);
+  background-color: rgba(212, 149, 187, 0.126);
   gap: 20px;
   display: flex;
   flex-direction: column;
@@ -67,51 +93,45 @@ form button {
   margin-left: 10px;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
+.input-group {
   position: relative;
-  color: rgba(255, 255, 255, 0.594);
-}
-
-.container .label {
-  font-size: 20px;
-  padding-left: 10px;
-  position: absolute;
-  top: 13px;
-  transition: 0.3s;
-  pointer-events: none;
+  border-radius: 100px;
 }
 
 .input {
-  width: 200px;
-  height: 45px;
-  border: none;
-  padding: 0px 7px;
-  border-radius: 6px;
-  color: rgba(203, 168, 168, 0.8274509804);
-  background-color: rgba(255, 255, 255, 0.7);
+  width: 90%;
+  border: solid 1.5px #fa880e;
+  border-radius: 1rem;
+  background: rgba(224, 206, 107, 0.694);
+  padding: 1rem;
+  font-size: 1rem;
+  color: #ffffff;
+  transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input:focus {
-  border: 2px solid transparent;
-  color: #010101;
+.user-label {
+  position: absolute;
+  left: 15px;
+  color: #000000;
+  pointer-events: none;
+  transform: translateY(1rem);
+  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.container .input:valid ~ .label,
-.container .input:focus ~ .label {
-  transition: 0.3s;
-  padding-left: 2px;
-  transform: translateY(-35px);
+.input:focus, input:valid {
+  outline: none;
+  border: 1.5px solid rgba(0, 102, 236, 0.5058823529);
 }
 
-.container .input {
-  width: 100%;
+.input:focus ~ label, input:valid ~ label {
+  transform: translateY(-50%) scale(0.8);
+  background-color: #010000;
+  padding: 0 0.2em;
+  color: #008cff;
 }
 
-.label {
-  color: rgb(7, 3, 3);
+.input-group:nth-child(6) input[type=text] {
+  height: 20vh;
 }
 
 header {
@@ -124,24 +144,24 @@ header {
   display: flex;
 }
 
-main {
+.main {
   background-color: rgba(17, 26, 49, 0.44);
   width: 50%;
   display: flex;
   flex-direction: column;
 }
 
-main h1 {
+.main h1 {
   font-size: 90px;
   color: white;
 }
 
-main p {
+.main p {
   color: white;
   font-size: 25px;
 }
 
-main,
+.main,
 h1,
 p {
   display: flex;

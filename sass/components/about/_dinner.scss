@@ -3,18 +3,10 @@
 
 .dinner {
   @include padding;
-  // padding: 20px 100px;
-  // background-color: white;
 }
 
 .dinner h1 {
   @include info-food;
-  // background-color: $h1-bg;
-  // padding: 10px;
-  // color: $text-color;
-  // width: 30%;
-  // border-bottom: 4px solid $h1-border;
-  // border-top: 4px solid $h1-border;
 }
 
 .dinner .text-dinner {
@@ -24,8 +16,6 @@
 
 .dinner .text-dinner .text-top .box1 {
   @include style-g-card;
-  // display: flex;
-  // justify-content: space-between;
   padding-bottom: 10px;
 }
 
@@ -41,17 +31,11 @@
 .dinner .text-dinner .text-bottom {
   @include style-center;
   padding-left: 20px;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-  // justify-content: center;
 }
 
 .dinner .text-dinner .text-bottom p {
   @include align-text;
-  // font-size: 25px;
   padding-top: 20px;
-  // text-align: center;
 }
 
 .dinner .text-dinner .text-bottom p:nth-child(2) {
@@ -61,8 +45,7 @@
 
 .dinner .text-dinner .text-bottom p:nth-child(1) span {
   @include text-contrast;
-  // color: $orange;
-  // font-weight: bold;
+
 }
 
 .df-food {
@@ -73,16 +56,12 @@
 .df-food h3 {
   @include style-h3;
   text-align: center;
-  // color: $orange;
-  // padding: 30px;
-  // font-size: 30px;
+
 }
 
 .F-food {
   @include style-g-card;
-  // display: flex;
-  // flex-wrap: wrap;
-  // justify-content: space-between;
+
 }
 
 .box-food {
