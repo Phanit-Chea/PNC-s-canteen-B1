@@ -75,11 +75,16 @@ header {
   height: 90vh;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header .text {
-  padding-top: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  padding-top: 60px;
 }
 
 header .text .info {
@@ -105,12 +110,12 @@ header .text .info p {
   padding-bottom: 20px;
 }
 
-header .text .info button {
+header .text .info a button {
+  border: none;
+  border-radius: 20px;
   padding: 20px 50px;
   background-color: orange;
   font-size: 25px;
-  border: none;
-  border-radius: 10px;
   color: white;
 }
 
@@ -152,7 +157,7 @@ header .text .info button {
 }
 
 .text-right button {
-  background-color: rgba(245, 222, 179, 0.411);
+  background-color: rgba(245, 222, 179, 0.573);
   padding: 20px;
   font-size: 20px;
   border: none;
@@ -188,7 +193,7 @@ header .text .info button {
 .menu-breakfast h1 {
   background-color: rgba(98, 150, 217, 0.603);
   padding: 10px;
-  color: rgb(24, 22, 22);
+  color: black;
   width: 30%;
   border-bottom: 4px solid rgb(15, 79, 163);
   border-top: 4px solid rgb(15, 79, 163);
@@ -198,7 +203,6 @@ header .text .info button {
 .menu-breakfast .group-food {
   display: flex;
   flex-wrap: wrap;
-  background-color: teal;
   justify-content: space-between;
 }
 
@@ -309,7 +313,7 @@ header .text .info button {
 }
 
 .fried-food .name-food .name, .soup-food .food-group .card-food .name:hover {
-  background-color: white;
+  background-color: orange;
 }
 
 .fried-food .name-food .ingredient {
@@ -361,8 +365,8 @@ img:hover {
   padding: 10px;
   color: rgb(24, 22, 22);
   width: 30%;
-  border-bottom: 4px solid rgb(15, 79, 163);
   border-top: 4px solid rgb(15, 79, 163);
+  border-bottom: 4px solid rgb(15, 79, 163);
 }
 
 .dinner .text-dinner {
@@ -372,6 +376,7 @@ img:hover {
 
 .dinner .text-dinner .text-top .box1 {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 10px;
 }
@@ -386,17 +391,18 @@ img:hover {
 }
 
 .dinner .text-dinner .text-bottom {
-  padding-left: 20px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  padding-left: 20px;
 }
 
 .dinner .text-dinner .text-bottom p {
+  display: flex;
+  text-align: center;
   font-size: 25px;
   padding-top: 20px;
-  text-align: center;
 }
 
 .dinner .text-dinner .text-bottom p:nth-child(2) {
@@ -415,10 +421,11 @@ img:hover {
 }
 
 .df-food h3 {
+  font-size: 30px;
   text-align: center;
   color: orange;
-  padding: 30px;
-  font-size: 30px;
+  padding: 20px;
+  text-align: center;
 }
 
 .F-food {

@@ -1,14 +1,13 @@
 .lunch {
-    // background-color: rgba(245, 222, 179, 0.573);
     padding: 20px 100px;
 }
 .lunch h1 {
-    background-color:  rgba(98, 150, 217, 0.603);
+    background-color:  $h1-bg;
     padding: 10px;
     color: rgb(24, 22, 22);
     width: 30%;
-    border-top: 4px solid rgb(15, 79, 163);
-    border-bottom: 4px solid rgb(15, 79, 163);
+    border-top: 4px solid $h1-border;
+    border-bottom: 4px solid $h1-border;
 }
 .lunch .top .image{
     display: flex;
@@ -26,7 +25,7 @@
     text-align: center;
 }
 .top .text p span {
-    color: orange;
+    color: $orange;
     font-weight: bold;
 }
 .bottom {
@@ -37,7 +36,7 @@
 .bottom h3{
     font-size:30px;
     text-align: center;
-    color: orange;
+    color:$orange;
     padding: 20px;
 }
 .fried-food {
@@ -52,29 +51,29 @@
 
 }
 .fried-food .name-food:hover{
-    background-color: white;
-    border: 4px solid orange;
+    background-color: $white;
+    border: 4px solid $orange;
     padding: 5px;
     border-top-left-radius: 20px ;
     border-bottom-right-radius: 20px ;
-    box-shadow: 2px 4px 10px orange;
+    box-shadow: 2px 4px 10px $orange;
 }
 .fried-food .name-food:nth-child(1) .pic img{
     width: 260px;
 }
 .fried-food .name-food .name,.soup-food .food-group .card-food .name {
-    background-color: orange;
+    background-color: $orange;
     display: flex;align-items: center;
     justify-content: center;
     text-align: center;
     border-radius: 20px;
 }
 .fried-food .name-food .name,.soup-food .food-group .card-food .name:hover {
-    background-color: white;
+    background-color: $orange;
 }
 .fried-food .name-food .ingredient {
     text-align: center;
-    border: 4px solid orange;
+    border: 4px solid $orange;
     border-radius:20px ;
 }
 .fried-food .name-food .ingredient:hover{
@@ -87,7 +86,7 @@
     padding-top: 20px;
 }
 .soup-food .food-group .card-food:hover{
-    background-color: white;
+    background-color: $white;
     padding: 10px;
 }
 .soup-food .food-group .card-food .center img {
@@ -102,6 +101,6 @@
     width: 240px;
 }
 img:hover {
-    box-shadow: 2px 4px 10px orange;
+    box-shadow: 2px 4px 10px $orange;
 }
 

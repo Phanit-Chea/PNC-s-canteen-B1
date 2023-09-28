@@ -1,0 +1,77 @@
+@mixin padding {
+    padding: 20px 100px;
+}
+@mixin style-h1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 28px;
+}
+@mixin style-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+@mixin text-contrast {
+    color: orange;
+    font-weight: bold;
+}
+@mixin button {
+    border: none;
+    border-radius: 20px;
+}
+@mixin price-box {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin price-text {
+    padding: 4px;
+    border-radius: 10px;
+    border: 4px solid orange;
+    width: 60px;
+    text-align: center;
+}
+@mixin info-food {
+    background-color:  rgba(98, 150, 217, 0.603);
+    padding: 10px;
+    color: rgb(24, 22, 22);
+    width: 30%;
+    border-top: 4px solid rgb(15, 79, 163);
+    border-bottom: 4px solid rgb(15, 79, 163);
+}
+@mixin style-g-card{
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: space-between;
+}
+@mixin size-img {
+    width: 360px;
+}
+@mixin align-text {
+    display: flex;
+    text-align: center;
+    font-size: 25px;
+}
+@mixin style-h3 {
+    font-size: 30px;
+    text-align: center;
+    color: orange;
+    padding: 20px;
+}
+@mixin box-hover {
+    background-color: white;
+    border: 4px solid orange;
+    padding: 5px;
+    border-top-left-radius: 20px ;
+    border-bottom-right-radius: 20px ;
+    box-shadow: 2px 4px 10px orange;
+}
+@mixin style-name-food {
+    background-color: orange;
+    display: flex;align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+}

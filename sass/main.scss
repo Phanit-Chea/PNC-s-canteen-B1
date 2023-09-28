@@ -7,7 +7,9 @@
     text-decoration: none;
     color: black;
 }
-
+@import "./group-mixin/variable";
+@import "./group-mixin/mixin";
 @import "./components/navbar";
 @import "./components/footer";
+
 
