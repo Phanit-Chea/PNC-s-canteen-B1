@@ -1,4 +1,166 @@
 * {
+<<<<<<< HEAD
+  margin: 0px;
+  padding: 0px;
+  font-family: "Inria Sans", sans-serif;
+=======
+  margin: 0;
+  padding: 0;
+  font-family: "Inria Sans", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  display: flex;
+  background-color: rgba(103, 32, 2, 0.6509803922);
+  padding: 10px;
+}
+
+nav .nav-left {
+  flex: 0.5;
+}
+
+nav .nav-left img {
+  width: 200px;
+}
+
+nav .nav-right {
+  flex: 1;
+  display: grid;
+  align-items: center;
+}
+
+nav .nav-right ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 25px;
+}
+
+nav .nav-right ul li a {
+  color: white;
+  font-weight: bold;
+}
+
+footer {
+  background-image: linear-gradient(rgb(123, 196, 224), rgb(94, 94, 177));
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  height: 35vh;
+}
+
+footer h2,
+footer p {
+  color: white;
+  padding: 10px;
+}
+
+.media-images,
+.media-name {
+  width: 50px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+.social-media img:nth-child(1),
+.social-media img:nth-child(2),
+.social-media img:nth-child(3) {
+  width: 40px;
+>>>>>>> 53304f5cfd9aadf39a9708df0d1cc6bb0bfd1c9a
+}
+
+body {
+  background-color: white;
+<<<<<<< HEAD
+}
+=======
+}
+
+header {
+  background-image: url(../../../images/Background.jpg);
+  height: 90vh;
+  background-repeat: no-repeat;
+}
+
+header .text {
+  padding-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .text .info {
+  background-color: rgba(103, 32, 2, 0.4078431373);
+  padding: 50px 150px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+header .text .info h1 {
+  font-size: 90px;
+  color: white;
+}
+
+header .text .info span {
+  font-size: 25px;
+  color: white;
+}
+
+header .text .info p {
+  font-size: 30px;
+  color: white;
+  padding-bottom: 20px;
+}
+
+header .text .info button {
+  padding: 20px 50px;
+  background-color: orange;
+  font-size: 25px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+
+.about-us h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.detail-about-us {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.about-images img {
+  width: 60%;
+  margin-left: 50px;
+}
+
+.about-text {
+  font-size: 25px;
+}
+
+.about-text a {
+  width: 100px;
+  background-color: orange;
+  color: black;
+  font-size: 20px;
+  padding: 6px 10px;
+  margin-top: 40px;
+  display: block;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+}
+
+* {
   margin: 0px;
   padding: 0px;
   font-family: "Inria Sans", sans-serif;
@@ -6,4 +168,5 @@
 
 body {
   background-color: white;
-}
+}/*# sourceMappingURL=home.css.map */
+>>>>>>> 53304f5cfd9aadf39a9708df0d1cc6bb0bfd1c9a
