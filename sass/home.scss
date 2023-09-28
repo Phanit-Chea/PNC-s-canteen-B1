@@ -1,9 +1,7 @@
-// <<<<<<< HEAD
-// @import "./main.scss";
-// @import "./components/home/breakfast";
-// =======
+
 @import "./main.scss";
-@import "./components/home/breakfast";
+@import "../sass/components/home/group-mixin";
+@import "./components/home/group-mixin";
 * {
     margin: 0px;
     padding: 0px;
@@ -13,4 +11,3 @@
 body {
     background-color: white;
 }
-// >>>>>>> 1b5416980e7988d708d5a9025f0568015eed0c00
