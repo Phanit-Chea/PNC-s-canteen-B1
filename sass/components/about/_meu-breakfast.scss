@@ -1,41 +1,26 @@
 .menu-breakfast{
+    // background-color: rgba(245, 222, 179, 0.573);
     display: flex;
     flex-direction: column;
     padding: 20px 100px;
 }
 .menu-breakfast h1 {
+    background-color:  rgba(98, 150, 217, 0.603);
+    padding: 10px;
+    color: rgb(24, 22, 22);
+    width: 30%;
+    border-bottom: 4px solid rgb(15, 79, 163);
+    border-top: 4px solid rgb(15, 79, 163);
     font-size: 28px;
 }
 .menu-breakfast .group-food{
-    // background-color: teal;
     display: flex;
+    flex-wrap: wrap;
+    background-color: teal;
     justify-content: space-between;
-    padding-top: 20px;
 }
-.menu-breakfast .food:hover{
-    // border: 4px solid orange;
-    background-color: orange;
-}
-.food img{
-    width: 300px;
-    border-radius: 300px;
-    // padding-bottom: 10px;
-}
-.food .line {
-    background-color: orange;
-    height: 1vh;
-    border-radius: 10px;
-    width: 270px;
-    
-}
-.food h2 {
-    text-align: center;
-    padding: 10px 0px;
-    font-size: 28px;
-}
-.food .ingredient {
-    text-align: center;
-    font-size: 18px;
+.df-food{
+    background-color: white;
 }
 .button{
     display: flex;

@@ -1,5 +1,5 @@
 .text-breakfast {
-    background-color: rgba(245, 222, 179, 0.687);
+    // background-color: rgba(245, 222, 179, 0.687);
     padding: 20px 100px;
 }
 .text-breakfast h1 {
@@ -14,7 +14,7 @@
 }
 .text-left img{
     width: 90%;
-    border: 4px solid orange;
+
 }
 .text-right{
     display: flex;
@@ -37,3 +37,22 @@
     font-size: 20px;
     border: none;
 }
+.price {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.price p {
+    padding: 4px;
+    border-radius: 10px;
+    border: 4px solid orange;
+    width: 60px;
+    text-align: center;
+  }
+  .price p:hover{
+    background-color: orange;
+    color: white;
+    font-size: 20px;
+  }
+

@@ -36,6 +36,9 @@ nav .nav-right ul {
 nav .nav-right ul li a {
   color: white;
   font-weight: bold;
+<<<<<<< HEAD
+}
+=======
 }
 
 footer {
@@ -69,3 +72,4 @@ footer p {
 .social-media img:nth-child(3) {
   width: 40px;
 }/*# sourceMappingURL=main.css.map */
+>>>>>>> 656a5dddaea8639eabc4714b1768d99f44c3c1cc
