@@ -1,3 +1,0 @@
-test 
-This is a test on git push which was error.
-This is a test on git push which was error01.
