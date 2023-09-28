@@ -7,12 +7,6 @@
   color: black;
 }
 
-.ingredient {
-  padding: 10px;
-  border-radius: 10px;
-  border: 4px solid orange;
-}
-
 nav {
   display: flex;
   background-color: rgba(103, 32, 2, 0.6509803922);
@@ -90,13 +84,8 @@ form button {
   border: none;
   padding: 0px 7px;
   border-radius: 6px;
-<<<<<<< HEAD
-  color: #ffffff;
-  background-color: rgb(204, 11, 11);
-=======
   color: rgba(203, 168, 168, 0.8274509804);
   background-color: rgba(255, 255, 255, 0.7);
->>>>>>> ea37eb7ef6cb50c55efc34777e2deca3ec0ff1f6
 }
 
 .input:focus {
