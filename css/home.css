@@ -1,1 +1,9 @@
-/*# sourceMappingURL=home.css.map */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Inria Sans", sans-serif;
+}
+
+body {
+  background-color: white;
+}/*# sourceMappingURL=home.css.map */
