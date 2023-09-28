@@ -6,10 +6,6 @@
 
 body {
   background-color: white;
-<<<<<<< HEAD
-}
-=======
-<<<<<<< HEAD
 }
 
 header {
@@ -179,8 +175,6 @@ header .text .info button {
 
 .food-schedule {
   width: 45%;
-=======
->>>>>>> 1b5416980e7988d708d5a9025f0568015eed0c00
 }
 footer {
   background-image: linear-gradient(rgb(123, 196, 224),rgb(94, 94, 177));
@@ -213,5 +207,3 @@ footer p{
   width: 40px;
 }
 
-/*# sourceMappingURL=home.css.map */
->>>>>>> 656a5dddaea8639eabc4714b1768d99f44c3c1cc
