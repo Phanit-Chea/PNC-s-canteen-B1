@@ -16,9 +16,11 @@ form {
 form button {
     width: 30%;
     height: 50px;
-    background-color: rgb(0, 30, 255);
+    background-color: orange;
     color: rgb(255, 255, 255);
     margin-left: 10px;
+    border: none;
+    border-radius: 10px;
 }
 
 .input-group {
@@ -53,9 +55,9 @@ form button {
    
    .input:focus ~ label, input:valid ~ label {
     transform: translateY(-50%) scale(0.8);
-    background-color: #010000;
+    background-color:orange;
     padding: 0 .2em;
-    color: #008cff;
+    color: #000000;
    }
    .input-group:nth-child(6) input[type=text]{
     height: 20vh;
