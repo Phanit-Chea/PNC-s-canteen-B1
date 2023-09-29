@@ -115,6 +115,18 @@ footer p {
   position: absolute;
 }
 
+.card-images1:hover {
+  border: 5px solid rgb(15, 79, 163);
+}
+
+.card-images2:hover {
+  border: 5px solid rgb(15, 79, 163);
+}
+
+.card-images3:hover {
+  border: 5px solid rgb(15, 79, 163);
+}
+
 .card {
   display: flex;
   justify-content: flex-start;
@@ -128,6 +140,12 @@ footer p {
   font-size: 20px;
   text-align: center;
   background-color: orange;
+}
+
+.card h3:hover {
+  background-color: rgb(15, 79, 163);
+  cursor: pointer;
+  color: white;
 }
 
 .about-us,

@@ -1,18 +1,18 @@
-
 header {
   background-image: url(../../../images/Background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 90vh;
 }
-html{
+
+html {
   scroll-behavior: smooth;
 }
 
 header .text {
   @include style-center;
   padding-top: 60px;
-  
+
 }
 
 header .text .info {
@@ -60,13 +60,14 @@ header .text .info a button {
   margin-left: 50px;
 }
 
-.about-text span{
+.about-text span {
   color: $orange;
 }
+
 .about-text {
   font-size: 25px;
 }
 
 .about-text a {
- @include text-view;
+  @include text-view;
 }
