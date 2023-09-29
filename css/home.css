@@ -79,10 +79,10 @@ footer p {
 
 .card-images1 img {
   width: 36%;
-  position: absolute;
   right: 250px;
   top: 825px;
   cursor: pointer;
+  position: absolute;
 }
 
 .card-images2 {
@@ -94,10 +94,10 @@ footer p {
 
 .card-images2 img {
   width: 29%;
-  position: absolute;
   right: 310px;
   top: 1230px;
   cursor: pointer;
+  position: absolute;
 }
 
 .card-images3 {
@@ -109,10 +109,10 @@ footer p {
 
 .card-images3 img {
   width: 23%;
-  position: absolute;
   right: 350px;
   top: 1595px;
   cursor: pointer;
+  position: absolute;
 }
 
 .card {
@@ -175,14 +175,13 @@ html {
 }
 
 header .text {
-  padding-top: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 60px;
 }
 
 header .text .info {
-  background-color: rgba(103, 32, 2, 0.63);
   padding: 50px 150px;
   text-align: center;
   border-radius: 20px;
@@ -204,12 +203,12 @@ header .text .info p {
   padding-bottom: 20px;
 }
 
-header .text .info button {
+header .text .info a button {
+  border: none;
+  border-radius: 20px;
   padding: 10px 40px;
   background-color: orange;
   font-size: 25px;
-  border: none;
-  border-radius: 10px;
   color: white;
 }
 

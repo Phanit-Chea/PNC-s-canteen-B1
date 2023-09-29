@@ -1,46 +1,34 @@
 .card-images1 {
-    width: 440px;
-    height: 250px;
-    background-color: orange;
-    border-radius: 80px 0px 0px 80px;
+   @include card-size;
   }
   
   .card-images1 img {
     width: 36%;
-    position: absolute;
     right: 250px;
     top: 825px;
-    cursor: pointer;
+    @include bg-card;
   }
   
   .card-images2 {
-    width: 440px;
-    height: 250px;
-    background-color: orange;
-    border-radius: 80px 0px 0px 80px;
+   @include card-size;
   }
   
   .card-images2 img {
     width: 29%;
-    position: absolute;
     right: 310px;
     top: 1230px;
-    cursor: pointer;
+    @include bg-card;
   }
   
   .card-images3 {
-    width: 440px;
-    height: 250px;
-    background-color: orange;
-    border-radius: 80px 0px 0px 80px;
+    @include card-size;
   }
   
   .card-images3 img {
     width: 23%;
-    position: absolute;
     right: 350px;
     top: 1595px;
-    cursor: pointer;
+    @include bg-card;
   }
   
   .card {
@@ -55,14 +43,14 @@
     padding: 10px;
     font-size: 20px;
     text-align: center;
-    background-color: orange;
+    background-color: $orange;
   }
   
   .about-us,
   .lunch,
   .dinner,
   .breakfast {
-    background-color: white;
+    background-color: $white;
     margin: 20px;
   }
   

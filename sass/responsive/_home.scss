@@ -1,0 +1,18 @@
+$breakpoints :(
+    'mobile' : 620px,
+    'tablet' : 730px,
+    'laptop' : 1024px,
+    'desktop' : 1200px,
+);
+@media screen and (min-width: map-get($breakpoints, "mobile")){
+    @content;
+}
+@media screen and (min-width: map-get($breakpoints, "tablet")){
+    @content;
+}
+@media screen and (min-width: map-get($breakpoints, "laptop")){
+    @content;
+}
+@media screen and (min-width: map-get($breakpoints, "desktop")){
+    @content;
+}
