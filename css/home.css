@@ -39,7 +39,7 @@ nav .nav-right ul li a {
 }
 
 footer {
-  background-image: linear-gradient(rgb(123, 196, 224), rgb(94, 94, 177));
+  background-image: linear-gradient(rgb(18, 100, 133), rgb(94, 94, 177));
   display: flex;
   justify-content: space-around;
   padding: 10px;
@@ -257,4 +257,4 @@ header .text .info button {
 
 body {
   background-color: white;
-}/*# sourceMappingURL=home.css.map */
+}
