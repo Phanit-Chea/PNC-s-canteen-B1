@@ -169,6 +169,7 @@ p {
   display: flex;
   justify-content: center;
   text-align: center;
+<<<<<<< HEAD
 }
 
 @media (min-width: 768px) and (max-width: 1280px) {
@@ -218,3 +219,6 @@ p {
     font-size: 15px;
   }
 }/*# sourceMappingURL=contact.css.map */
+=======
+}
+>>>>>>> bbaff11d5fbebcf5686babace39a1af24b31b758
