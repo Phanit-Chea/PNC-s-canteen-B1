@@ -462,5 +462,21 @@ img:hover {
   background-size: cover;
   height: 60vh;
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.word p {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.446);
+  font-size: 50px;
+  color: white;
+}
+
+.word img {
+  background-color: white;
+  width: 100px;
+  margin-left: 50px;
+  margin-top: 20px;
 }
