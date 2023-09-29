@@ -136,6 +136,8 @@ form button {
   height: 20vh;
 }
 
+<<<<<<< HEAD
+=======
 header {
   background-image: url(../../../images/b41bc51dcf4708c42c7528ebe37786ec.jpg);
   background-repeat: no-repeat;
@@ -146,6 +148,7 @@ header {
   display: flex;
 }
 
+>>>>>>> 7ab7c6c8c83ff632bab3a58373685705baa39304
 .main {
   background-color: rgba(17, 26, 49, 0.44);
   width: 50%;
