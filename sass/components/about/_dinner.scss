@@ -31,10 +31,12 @@
   @include style-center;
   padding-left: 20px;
   font-size: 20px;
+  flex-direction: column;
 }
 
 .dinner .text-dinner .text-bottom p {
-  // @include align-text;
+  display: flex;
+  flex-direction: column;
   font-size: 20px;
   padding-top: 20px;
 }

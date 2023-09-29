@@ -319,6 +319,7 @@ header .text .info a button {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .fried-food .name-food .ingredient:hover {
@@ -395,9 +396,12 @@ img:hover {
   justify-content: center;
   padding-left: 20px;
   font-size: 20px;
+  flex-direction: column;
 }
 
 .dinner .text-dinner .text-bottom p {
+  display: flex;
+  flex-direction: column;
   font-size: 20px;
   padding-top: 20px;
 }
