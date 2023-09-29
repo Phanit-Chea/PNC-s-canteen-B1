@@ -39,7 +39,7 @@ nav .nav-right ul li a {
 }
 
 footer {
-  background-image: linear-gradient(rgb(123, 196, 224), rgb(94, 94, 177));
+  background-image: linear-gradient(rgb(18, 100, 133), rgb(94, 94, 177));
   display: flex;
   justify-content: space-around;
   padding: 10px;
@@ -89,7 +89,7 @@ form button {
   width: 30%;
   height: 50px;
   background-color: orange;
-  color: rgb(255, 255, 255);
+  color: white;
   margin-left: 10px;
   border: none;
   border-radius: 10px;
@@ -102,19 +102,19 @@ form button {
 
 .input {
   width: 90%;
-  border: solid 1.5px #fa880e;
+  border: solid 1.5px orange;
   border-radius: 1rem;
-  background: rgba(224, 206, 107, 0.694);
+  background: rgba(17, 31, 110, 0.26);
   padding: 1rem;
   font-size: 1rem;
-  color: #ffffff;
+  color: white;
   transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .user-label {
   position: absolute;
   left: 15px;
-  color: #000000;
+  color: white;
   pointer-events: none;
   transform: translateY(1rem);
   transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -122,22 +122,20 @@ form button {
 
 .input:focus, input:valid {
   outline: none;
-  border: 1.5px solid rgba(0, 102, 236, 0.5058823529);
+  border: 1.5px solid rgba(98, 150, 217, 0.603);
 }
 
 .input:focus ~ label, input:valid ~ label {
   transform: translateY(-50%) scale(0.8);
   background-color: orange;
   padding: 0 0.2em;
-  color: #000000;
+  color: black;
 }
 
 .input-group:nth-child(6) input[type=text] {
   height: 20vh;
 }
 
-<<<<<<< HEAD
-=======
 header {
   background-image: url(../../../images/b41bc51dcf4708c42c7528ebe37786ec.jpg);
   background-repeat: no-repeat;
@@ -148,9 +146,8 @@ header {
   display: flex;
 }
 
->>>>>>> 7ab7c6c8c83ff632bab3a58373685705baa39304
 .main {
-  background-color: rgba(17, 26, 49, 0.44);
+  background-color: rgba(103, 32, 2, 0.4078431373);
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -220,4 +217,8 @@ p {
   footer p {
     font-size: 15px;
   }
+<<<<<<< HEAD
+}/*# sourceMappingURL=contact.css.map */
+=======
 }
+>>>>>>> f0cdc008ff282b8f9d22a28e4d620ed6b731df6c
