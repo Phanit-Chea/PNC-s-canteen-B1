@@ -5,6 +5,9 @@ header {
   background-size: cover;
   height: 90vh;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 header .text {
   padding-top: 60px;
@@ -14,7 +17,7 @@ header .text {
 }
 
 header .text .info {
-  background-color: rgba(103, 32, 2, 0.4078431373);
+  background-color: rgba(103, 32, 2, 0.63);
   padding: 50px 150px;
   text-align: center;
   border-radius: 20px;
@@ -60,6 +63,9 @@ header .text .info button {
   margin-left: 50px;
 }
 
+.about-text span{
+  color: orange;
+}
 .about-text {
   font-size: 25px;
 }
