@@ -1,39 +1,49 @@
 @import "../../group-mixin/variable";
 @import "../../group-mixin/mixin";
+
 header {
-   background-image: url(../../../images/local-food-singapore.webp);
-   height: 90vh;
+    background-image: url(../../../images/local-food-singapore.webp);
+    height: 90vh;
+
+    .text {
+        @include style-center;
+        padding-top: 60px;
+
+        .info {
+            background-color: $nav-bg;
+            padding: 50px 150px;
+            text-align: center;
+            border-radius: 20px;
+
+            h1 {
+                font-size: 90px;
+                color: $white;
+            }
+
+            span {
+                font-size: 18px;
+                color: $white;
+            }
+
+            p {
+                font-size: 30px;
+                color: $white;
+                padding-bottom: 20px;
+            }
+
+            a {
+                button {
+                    @include button;
+                    padding: 20px 50px;
+                    background-color: $orange;
+                    font-size: 25px;
+                    color: $white;
+                }
+            }
+        }
+    }
 }
-html{
+
+html {
     scroll-behavior: smooth;
-}
-header .text {
-    @include style-center;
-    padding-top: 60px;
-}
-header .text .info {
-    background-color: $nav-bg;
-    padding: 50px 150px;
-    text-align: center;
-    border-radius: 20px;
-}
-header .text .info h1{
-    font-size: 90px;
-    color: $white;
-}
-header .text .info span{
-    font-size: 18px;
-    color: $white;
-}
-header .text .info p{
-    font-size: 30px;
-    color: $white;
-    padding-bottom: 20px;
-}
-header .text .info a button{
-    @include button;
-    padding: 20px 50px;
-    background-color: $orange;
-    font-size: 25px;
-    color: $white;
 }

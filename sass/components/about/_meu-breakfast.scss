@@ -1,34 +1,43 @@
 @import "../../group-mixin/variable";
 @import "../../group-mixin/mixin";
 
-.menu-breakfast{
+.menu-breakfast {
     @include padding;
     display: flex;
     flex-direction: column;
+
+    h1 {
+        @include info-food;
+        font-size: 28px;
+    }
+
+    .df-food {
+        background-color: $white;
+    }
 }
-.menu-breakfast h1 {
-    @include info-food;
-    font-size: 28px;
-}
-.menu-breakfast .group-food{
+
+.menu-breakfast .group-food {
     @include style-g-card;
 }
-.df-food{
+
+.df-food {
     background-color: $white;
 }
-.button{
+
+.button {
     @include style-center;
     padding-top: 40px;
 }
-.btn{
+
+.btn {
     @include padding;
     background-color: $orange;
     font-size: 25px;
     color: $white;
     border-radius: 10px;
 }
-.food:nth-child(1),.food:nth-child(4){
+
+.food:nth-child(1),
+.food:nth-child(4) {
     padding-top: 90px;
 }
-
-

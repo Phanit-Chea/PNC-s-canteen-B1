@@ -1,4 +1,4 @@
-.rice{
+.rice {
     background-image: url(../../../images/fjsoer.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -7,18 +7,21 @@
     align-items: center;
     justify-content: space-evenly;
     margin-bottom: 20px;
-}
-.word p{
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.446);
-    font-size: 50px;
-    color: white;
-}
-.word img {
-    background-color: white;
-    width: 100px;
-    margin-left: 50px;
-    margin-top: 20px;
-   
-}
 
+    .word {
+        p {
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.446);
+            font-size: 50px;
+            color: white;
+        }
+
+        img {
+            background-color: white;
+            width: 100px;
+            margin-left: 50px;
+            margin-top: 20px;
+
+        }
+    }
+}

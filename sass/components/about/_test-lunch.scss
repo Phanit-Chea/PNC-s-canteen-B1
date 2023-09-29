@@ -3,82 +3,125 @@
 
 .lunch {
     @include padding;
-}
-.lunch h1 {
-    @include info-food;
+
+    h1 {
+        @include info-food;
+
+    }
+
+    .top {
+        .image {
+            @include style-g-card;
+            padding-top: 20px;
+
+            img {
+                width: 360px;
+            }
+        }
+
+        .text {
+            display: flex;
+            font-size: 20px;
+            padding-top: 20px;
+            text-align: center;
+
+            p span {
+                @include text-contrast;
+            }
+        }
+    }
+
+    .bottom {
+        @include df-column;
+        padding-top: 20px;
+
+        h3 {
+            font-size: 30px;
+            text-align: center;
+            color: $orange;
+            padding: 20px;
+        }
+
+        .fried-food {
+            @include style-g-card;
+
+            .name-food {
+                .pic {
+                    img {
+                        width: 260px;
+                        height: 230px;
+
+                    }
+                }
+            }
+
+            .name-food:hover {
+                @include box-hover;
+            }
+
+            .name-food:nth-child(1) {
+                .pic {
+                    img {
+                        width: 260px;
+                    }
+                }
+
+                .name {
+                    @include style-name-food;
+                    background-color: $orange;
+                }
+
+                .ingredient {
+                    @include price-box;
+                }
+
+                .ingredient:hover {
+                    border: none;
+                }
+
+            }
+
+        }
+
+        .soup-food {
+            .food-group {
+                @include style-g-card;
+                padding-top: 20px;
+
+                .card-food:hover {
+                    background-color: $white;
+                    padding: 10px;
+
+                    .center {
+                        img {
+                            width: 230px;
+                            height: 230px;
+                        }
+                    }
+
+                    .ingredient {
+                        text-align: center;
+                        padding-top: 60px;
+                    }
+
+
+                }
+
+                .card-food:nth-child(1) {
+                    .center {
+                        img {
+                            width: 240px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
 
 }
-.lunch .top .image{
-@include style-g-card;
-    padding-top: 20px;
-}
-.lunch .top img {
-    width: 360px;
-}
-.top .text {
-    display: flex;
-    font-size: 20px;
-    padding-top: 20px;
-    text-align: center;
-}
-.top .text p span {
-    @include text-contrast;
-}
-.bottom {
-    @include df-column;
-    padding-top: 20px;
-}
-.bottom h3{
-    font-size:30px;
-    text-align: center;
-    color:$orange;
-    padding: 20px;
-}
-.fried-food {
-    @include style-g-card;
-}
-.fried-food .name-food .pic img{
-    width: 260px;
-    height: 230px;
 
-}
-.fried-food .name-food:hover{
-    @include box-hover;
-}
-.fried-food .name-food:nth-child(1) .pic img{
-    width: 260px;
-}
-.fried-food .name-food .name,.soup-food .food-group .card-food .name {
-    @include style-name-food;
-}
-.fried-food .name-food .name,.soup-food .food-group .card-food .name:hover {
-    background-color: $orange;
-}
-.fried-food .name-food .ingredient {
-    @include price-box;
-}
-.fried-food .name-food .ingredient:hover{
-    border: none;
-}
-.soup-food .food-group{
-    @include style-g-card;
-    padding-top: 20px;
-}
-.soup-food .food-group .card-food:hover{
-    background-color: $white;
-    padding: 10px;
-}
-.soup-food .food-group .card-food .center img {
-    width: 230px;
-    height: 230px;
-}
-.soup-food .food-group .card-food .ingredient{
-    text-align: center;
-    padding-top: 60px;
-}
-.soup-food .food-group .card-food:nth-child(1) .center img {
-    width: 240px;
-}
-img:hover{
+img:hover {
     box-shadow: 2px 4px 10px $orange;
 }
