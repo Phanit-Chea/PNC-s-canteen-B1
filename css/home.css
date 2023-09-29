@@ -1,9 +1,4 @@
 * {
-<<<<<<< HEAD
-  margin: 0px;
-  padding: 0px;
-  font-family: "Inria Sans", sans-serif;
-=======
   margin: 0;
   padding: 0;
   font-family: "Inria Sans", sans-serif;
@@ -73,14 +68,10 @@ footer p {
 .social-media img:nth-child(2),
 .social-media img:nth-child(3) {
   width: 40px;
->>>>>>> 53304f5cfd9aadf39a9708df0d1cc6bb0bfd1c9a
 }
 
 body {
   background-color: white;
-<<<<<<< HEAD
-}
-=======
 }
 
 header {
@@ -168,5 +159,4 @@ header .text .info button {
 
 body {
   background-color: white;
-}/*# sourceMappingURL=home.css.map */
->>>>>>> 53304f5cfd9aadf39a9708df0d1cc6bb0bfd1c9a
+}
