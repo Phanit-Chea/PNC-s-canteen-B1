@@ -1,37 +1,39 @@
+@import "../../group-mixin/variable";
+@import "../../group-mixin/mixin";
 header {
    background-image: url(../../../images/local-food-singapore.webp);
    height: 90vh;
 }
+html{
+    scroll-behavior: smooth;
+}
 header .text {
+    @include style-center;
     padding-top: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 header .text .info {
-    background-color: #67200268;
+    background-color: $nav-bg;
     padding: 50px 150px;
     text-align: center;
     border-radius: 20px;
 }
 header .text .info h1{
     font-size: 90px;
-    color: white;
+    color: $white;
 }
 header .text .info span{
-    font-size: 25px;
-    color: white;
+    font-size: 18px;
+    color: $white;
 }
 header .text .info p{
     font-size: 30px;
-    color: white;
+    color: $white;
     padding-bottom: 20px;
 }
-header .text .info button{
+header .text .info a button{
+    @include button;
     padding: 20px 50px;
-    background-color: orange;
+    background-color: $orange;
     font-size: 25px;
-    border: none;
-    border-radius: 10px;
-    color: white;
+    color: $white;
 }

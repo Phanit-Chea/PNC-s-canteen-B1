@@ -1,38 +1,30 @@
+@import "../../group-mixin/variable";
+@import "../../group-mixin/mixin";
+
 .menu-breakfast{
-    // background-color: rgba(245, 222, 179, 0.573);
+    @include padding;
     display: flex;
     flex-direction: column;
-    padding: 20px 100px;
 }
 .menu-breakfast h1 {
-    background-color:  rgba(98, 150, 217, 0.603);
-    padding: 10px;
-    color: rgb(24, 22, 22);
-    width: 30%;
-    border-bottom: 4px solid rgb(15, 79, 163);
-    border-top: 4px solid rgb(15, 79, 163);
+    @include info-food;
     font-size: 28px;
 }
 .menu-breakfast .group-food{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: teal;
-    justify-content: space-between;
+    @include style-g-card;
 }
 .df-food{
-    background-color: white;
+    background-color: $white;
 }
 .button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include style-center;
     padding-top: 40px;
 }
 .btn{
-    background-color: orange;
-    padding: 20px 100px;
+    @include padding;
+    background-color: $orange;
     font-size: 25px;
-    color: white;
+    color: $white;
     border-radius: 10px;
 }
 .food:nth-child(1),.food:nth-child(4){

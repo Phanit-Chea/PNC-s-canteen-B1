@@ -1,1 +1,6 @@
-@media (max-width)
+$breakpoints :(
+    'Mobile' : 620px,
+    'Tablet' : 730px,
+    'laptop' : 1024px,
+    'Desktop' : 1200px,
+);

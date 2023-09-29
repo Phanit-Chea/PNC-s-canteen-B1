@@ -1,7 +1,9 @@
 
 @import "./main.scss";
-@import "./components/home/group-food";
+// @import "./components/home/breakfast";
 @import "./components/home/card-food";
+@import "./components/home/group-food";
+
 * {
     margin: 0px;
     padding: 0px;
@@ -11,3 +13,4 @@
 body {
     background-color: white;
 }
+
