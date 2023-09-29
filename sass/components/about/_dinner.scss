@@ -1,31 +1,107 @@
+@import "../../group-mixin/variable";
+@import "../../group-mixin/mixin";
+
 .dinner {
-    padding: 20px 100px;
-  }
-  .dinner .text-dinner {
-    display: flex;
-    padding-top: 20px;
-  }
-  .dinner .text-dinner .text-top img{
-    border: 4px solid rgb(15, 79, 163);
-  }
-  .dinner .text-dinner .text-top .box1{
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 10px;
-  }
-  .dinner .text-dinner .text-top .box1 img{
-    width: 300px;
-    height: 200px;
-  }
-  .dinner .text-dinner .text-bottom{
-    padding-left: 20px;
-  }
-  .dinner .text-dinner .text-bottom p {
-    font-size: 25px;
-    padding-top: 20px;
-    text-align: center;
-  }
-  .dinner .text-dinner .text-bottom p:nth-child(2){
-    background-color:  rgba(245, 222, 179, 0.573);
-    padding: 10px;
-  }
+  @include padding;
+  // padding: 20px 100px;
+  // background-color: white;
+}
+
+.dinner h1 {
+  @include info-food;
+  // background-color: $h1-bg;
+  // padding: 10px;
+  // color: $text-color;
+  // width: 30%;
+  // border-bottom: 4px solid $h1-border;
+  // border-top: 4px solid $h1-border;
+}
+
+.dinner .text-dinner {
+  display: flex;
+  padding-top: 20px;
+}
+
+.dinner .text-dinner .text-top .box1 {
+  @include style-g-card;
+  // display: flex;
+  // justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.dinner .text-dinner .text-top .box1 img {
+  width: 300px;
+  height: 200px;
+}
+
+.dinner .text-dinner .text-top img:hover {
+  box-shadow: 2px 4px 10px $orange;
+}
+
+.dinner .text-dinner .text-bottom {
+  @include style-center;
+  padding-left: 20px;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
+}
+
+.dinner .text-dinner .text-bottom p {
+  @include align-text;
+  // font-size: 25px;
+  padding-top: 20px;
+  // text-align: center;
+}
+
+.dinner .text-dinner .text-bottom p:nth-child(2) {
+  background-color:$dinner-bg;
+  padding: 10px;
+}
+
+.dinner .text-dinner .text-bottom p:nth-child(1) span {
+  @include text-contrast;
+  // color: $orange;
+  // font-weight: bold;
+}
+
+.df-food {
+  display: flex;
+  flex-direction: column;
+}
+
+.df-food h3 {
+  @include style-h3;
+  text-align: center;
+  // color: $orange;
+  // padding: 30px;
+  // font-size: 30px;
+}
+
+.F-food {
+  @include style-g-card;
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: space-between;
+}
+
+.box-food {
+  padding: 10px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.box-food:hover {
+  border: 4px solid $orange;
+  background-color: $white;
+  box-shadow: 2px 4px 10px $orange;
+}
+
+.box-food img {
+  width: 260px;
+  height: 146.39px;
+}
+
+.box-food .name {
+  text-align: center;
+}
