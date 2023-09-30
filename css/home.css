@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0;
@@ -53,10 +52,26 @@ nav .nav-right ul li:nth-child(2) .another {
   display: none;
 }
 
-=======
->>>>>>> b178a40c02ac2718ba3ff9d75f3a50889c59dc4a
+li:nth-child(2):hover .another {
+  display: block;
+  background-color: wheat;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+li:nth-child(2):hover .another ul {
+  display: block;
+  margin: 10px;
+}
+
+li:nth-child(2):hover .another ul li {
+  width: 100px;
+  padding: 10px;
+  background-color: wheat;
+}
+
 footer {
-  background-image: linear-gradient(rgb(18, 100, 133), rgb(94, 94, 177));
+  background-image: linear-gradient(rgba(98, 150, 217, 0.603), rgb(15, 79, 163));
   display: flex;
   justify-content: space-around;
   padding: 10px;
@@ -87,68 +102,6 @@ footer p {
   width: 40px;
 }
 
-nav {
-  background-color: rgba(18, 18, 19, 0.487);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-nav .nav-left {
-  flex: 1;
-}
-nav .nav-left img {
-  width: 80px;
-  padding: 10px 80px;
-}
-nav .nav-right {
-  flex: 1;
-}
-nav .nav-right ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  font-size: 20px;
-}
-nav .nav-right ul li a:hover {
-  color: purple;
-}
-nav .nav-right ul li:hover {
-  border-bottom: 3px solid orange;
-}
-nav .nav-right ul li:nth-child(3) {
-  border: 3px solid orange;
-  padding: 5px 10px;
-  border-radius: 10px;
-}
-nav .nav-right ul li:nth-child(3):hover {
-  background-color: orange;
-  border: none;
-}
-nav .nav-right ul li:nth-child(3):hover a {
-  color: purple;
-}
-nav .nav-right ul li:nth-child(2) .another {
-  display: none;
-}
-
-li:nth-child(2):hover .another {
-  display: block;
-  background-color: wheat;
-  margin-top: 15px;
-  margin-left: 15px;
-}
-
-li:nth-child(2):hover .another ul {
-  display: block;
-  margin: 10px;
-}
-
-li:nth-child(2):hover .another ul li {
-  width: 100px;
-  padding: 10px;
-  background-color: wheat;
-}
-
 .about-us {
   padding: 20px 90px;
   display: flex;
@@ -177,32 +130,26 @@ li:nth-child(2):hover .another ul li {
 .chef {
   padding: 20px 90px;
 }
-
 .chef h1 {
   text-align: center;
   padding: 20px;
 }
-
 .chef .chef-info {
   display: flex;
   justify-content: space-between;
 }
-
 .chef .chef-info .info {
   background-color: orange;
 }
-
 .chef .chef-info .info img {
   width: 400px;
   height: 40vh;
 }
-
-.chef .chef-info .info h2 {
+.chef .chef-info .info .info h2 {
   padding: 10px;
   text-align: center;
 }
-
-.chef .chef-info .info p {
+.chef .chef-info .info .info p {
   padding: 10px;
   text-align: center;
 }
@@ -213,7 +160,6 @@ li:nth-child(2):hover .another ul li {
   gap: 40px;
   background-color: orange;
 }
-
 .food-overview .left {
   flex: 0.4;
   display: flex;
@@ -221,22 +167,18 @@ li:nth-child(2):hover .another ul li {
   text-align: center;
   justify-content: center;
 }
-
 .food-overview .left h1 {
   padding-bottom: 10px;
 }
-
 .food-overview .right {
   flex: 1;
   display: flex;
 }
-
 .food-overview .right .card-food {
-  border: 4px solid white;
+  border: 4px solid orange;
   padding: 10px;
   border-radius: 20px;
 }
-
 .food-overview .right .card-food .top1 {
   height: 30vh;
   background-image: url(../images/Koko-shoup.jpg);
@@ -245,14 +187,12 @@ li:nth-child(2):hover .another ul li {
   box-shadow: 2px 1px 1px black;
   overflow: hidden;
 }
-
 .food-overview .right .card-food .food-des {
   background-color: white;
   text-align: center;
   padding: 10px;
   box-shadow: 2px 1px 1px black;
 }
-
 .food-overview .right .card-food .top2 {
   height: 30vh;
   background-image: url(../images/Baby-corn.jpg);
@@ -260,7 +200,6 @@ li:nth-child(2):hover .another ul li {
   background-position: center;
   box-shadow: 2px 1px 1px black;
 }
-
 .food-overview .right .card-food .top3 {
   height: 30vh;
   background-image: url(../images/Morning-glory.jpg);
@@ -268,8 +207,7 @@ li:nth-child(2):hover .another ul li {
   background-position: center;
   box-shadow: 2px 1px 1px black;
 }
-
-.food-overview .right .card-food:hover {
+.food-overview .right .card-food .card-food:hover {
   cursor: pointer;
 }
 
@@ -279,21 +217,17 @@ li:nth-child(2):hover .another ul li {
   justify-content: space-between;
   align-items: center;
 }
-
 .service .word {
   flex: 1;
   text-align: center;
 }
-
 .service .word h1 {
   font-weight: bold;
   padding-bottom: 20px;
 }
-
-.service .word h1 span {
+.service .word span {
   color: orange;
 }
-
 .service .main-point {
   background-color: orange;
   display: flex;
@@ -302,17 +236,14 @@ li:nth-child(2):hover .another ul li {
   width: 50%;
   border-radius: 20px;
 }
-
 .service .main-point .meaning {
   display: flex;
   align-items: center;
   padding: 10px 20px;
 }
-
 .service .main-point .meaning .img {
   flex: 0.3;
 }
-
 .service .main-point .meaning .img img {
   background-color: white;
   width: 60px;
@@ -320,7 +251,6 @@ li:nth-child(2):hover .another ul li {
   padding: 5px;
   border-radius: 60px;
 }
-
 .service .main-point .meaning .text-des {
   flex: 1;
 }

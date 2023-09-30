@@ -21,7 +21,6 @@ nav .nav-left img {
   width: 90px;
   padding: 10px 80px;
   box-shadow: none;
-  @in;
 }
 nav .nav-right {
   flex: 1;
@@ -105,15 +104,15 @@ footer p {
 }
 
 header {
-  background-image: url(../../../images/local-food-singapore.webp);
-  height: 90vh;
   display: flex;
   flex-direction: column;
+  background-image: url(../../../images/local-food-singapore.webp);
+  height: 90vh;
 }
 header .text .text-head {
-  background-color: rgba(245, 222, 179, 0.743);
-  width: 50%;
   border-radius: 20px;
+  background-color: rgba(245, 222, 179, 0.573);
+  width: 50%;
 }
 header .text .text-head h1 {
   margin-top: 150px;
@@ -121,12 +120,12 @@ header .text .text-head h1 {
   font-size: 60px;
 }
 header .text .btn {
+  padding: 20px;
+  font-size: 20px;
   margin-left: 200px;
   margin-top: 20px;
   background-color: wheat;
   width: 60%;
-  padding: 20px;
-  font-size: 20px;
 }
 
 html {
@@ -134,7 +133,7 @@ html {
 }
 
 .text-schedule {
-  padding: 50px 90px;
+  padding: 20px 100px;
   text-align: center;
 }
 .text-schedule h1 {
@@ -156,10 +155,10 @@ html {
   justify-content: space-evenly;
 }
 .schedule .breakfast {
-  flex: 1;
   background-color: orange;
   border-right: 4px solid wheat;
   box-shadow: 10px 10px 5px orange;
+  flex: 1;
 }
 .schedule .breakfast .picture img {
   width: 370px;
@@ -180,6 +179,7 @@ html {
 }
 .schedule .breakfast .menu .n-food .each-food {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .schedule .breakfast .menu .n-food .each-food p {
@@ -188,9 +188,9 @@ html {
 }
 .schedule .lunch {
   background-color: orange;
-  flex: 1;
   border-right: 4px solid wheat;
-  box-shadow: 2px 10px 2px orange;
+  box-shadow: 10px 10px 5px orange;
+  flex: 1;
 }
 .schedule .lunch .picture img {
   width: 370px;
@@ -211,6 +211,7 @@ html {
 }
 .schedule .lunch .menu .n-food .each-food {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   border-bottom: 4px solid orange;
 }
@@ -251,7 +252,7 @@ html {
 }
 
 .menu-breakfast {
-  padding: 20px 90px;
+  padding: 20px 100px;
 }
 .menu-breakfast h1 {
   color: orange;
@@ -259,6 +260,7 @@ html {
 }
 .menu-breakfast .group-food {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .menu-breakfast .group-food .card-food {
@@ -291,128 +293,12 @@ html {
 }
 .menu-breakfast .group-food .card-food .bottom a:hover button {
   background-color: white;
-  font-size: 16px;
+  font-size: 18px;
 }
 .menu-breakfast .group-food .card-food:hover {
   background-color: white;
   border: 4px solid orange;
   box-shadow: 2px 2px 2px orange;
-}
-
-.menu-lunch {
-  padding: 20px 90px;
-}
-.menu-lunch .g-food {
-  display: flex;
-  flex: 1.7;
-  justify-content: space-between;
-}
-.menu-lunch .g-food h3 {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 28px;
-  color: orange;
-  font-weight: bold;
-}
-.menu-lunch .g-food .c-food {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  flex-wrap: wrap;
-}
-.menu-lunch .g-food .c-food .box {
-  width: 32%;
-  margin-bottom: 10px;
-  height: 30vh;
-  border: 4px solid orange;
-  border-radius: 20px;
-}
-.menu-lunch .g-food .c-food .box p {
-  text-align: center;
-}
-.menu-lunch .g-food .c-food .box:hover {
-  box-shadow: 3px 3px 5px gray;
-}
-.menu-lunch .g-food .c-food #box1 {
-  background-image: url(../../../images/char.png);
-  background-size: cover;
-  background-position: center;
-}
-.menu-lunch .g-food .c-food #box2 {
-  background-image: url(../../../images/ឆាមី.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.menu-lunch .g-food .c-food #box3 {
-  background-image: url(../../../images/ឆាក្រៀង.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.menu-lunch .g-food .c-food #box4 {
-  background-image: url(../../../images/ឆាត្រសក់.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.menu-lunch .g-food .c-food #box5 {
-  background-image: url(../../../images/ឆាល្ពៅ​​ដកថ្.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.menu-lunch .g-food .c-food #box6 {
-  background-image: url(../../../images/ឆាសណ្តែគួ.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.menu-lunch .soup-food h3 {
-  color: orange;
-  text-align: center;
-  padding: 20px;
-  font-size: 28px;
-}
-.menu-lunch .soup-food .G-food {
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: space-between;
-}
-.menu-lunch .soup-food .G-food .card {
-  width: 32%;
-  height: 40vh;
-  margin-bottom: 10px;
-}
-.menu-lunch .soup-food .G-food .card:hover {
-  box-shadow: 3px 3px 5px gray;
-}
-.menu-lunch .soup-food .G-food #box1 {
-  background-image: url(../../../images/ម្ជុរយួនត្រីរ៉ស.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.menu-lunch .soup-food .G-food #box2 {
-  background-image: url(../../../images/កកូរ​សដថក.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.menu-lunch .soup-food .G-food #box3 {
-  background-image: url(../../../images/ម្ជួក្​រឿង.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.menu-lunch .soup-food .G-food #box4 {
-  background-image: url(../../../images/ស្ពៃស្ងោ.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.menu-lunch .soup-food .G-food #box5 {
-  background-image: url(../../../images/ប្រហើរ.png);
-  background-size: cover;
-  background-position: center;
-}
-.menu-lunch .soup-food .G-food #box6 {
-  background-image: url(../../../images/morning.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .menu-dinner {

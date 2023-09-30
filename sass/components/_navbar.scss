@@ -11,9 +11,7 @@ nav {
             width: 90px;
             padding: 10px 80px;
             box-shadow: none;
-            @include responsive(phone){
-                width: 100px;
-            }
+
            
         }
     }
@@ -55,9 +53,7 @@ nav {
             li:nth-child(2) .another {
                 display: none;
             }
-            @include responsive(phone){
-                font-size: 10px;
-            }
+
         }
 
     }

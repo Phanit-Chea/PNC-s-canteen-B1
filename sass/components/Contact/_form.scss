@@ -2,7 +2,6 @@
     display: flex;
     padding: 30px;
     gap: 30px;
- 
 }
 
 form {
@@ -17,7 +16,7 @@ form {
     }
     @include responsive(phone){
         width: 100%;
-         gap:10px ;
+        gap:10px ;
     }
 }
 
@@ -69,6 +68,5 @@ form button {
    }
    .input-group:nth-child(6) input[type=text]{
     height: 20vh;
-
    }
    
