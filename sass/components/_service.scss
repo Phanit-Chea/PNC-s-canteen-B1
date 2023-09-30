@@ -1,0 +1,52 @@
+.service {
+    padding: 20px 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .word {
+        flex: 1;
+        text-align: center;
+
+        h1 {
+            font-weight: bold;
+            padding-bottom: 20px;
+        }
+
+        span {
+            color: $orange;
+        }
+
+    }
+
+    .main-point {
+        background-color: $orange;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        border-radius: 20px;
+
+        .meaning {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+
+            .img {
+                flex: 0.3;
+
+                img {
+                    background-color: $white;
+                    width: 60px;
+                    align-items: center;
+                    padding: 5px;
+                    border-radius: 60px;
+                }
+            }
+
+            .text-des {
+                flex: 1;
+            }
+        }
+    }
+}

@@ -1,5 +1,5 @@
 footer {
-    background-image: linear-gradient(rgb(18, 100, 133),rgb(94, 94, 177));
+    background-image: linear-gradient($h1-bg, $h1-border);
     display: flex;
     justify-content: space-around;
     padding: 10px;
@@ -7,16 +7,17 @@ footer {
 }
 
 footer h2,
-footer p{
-    color:white;
+footer p {
+    color: $white;
     padding: 10px;
 }
 
 .media-images,
-.media-name{
+.media-name {
     width: 50px;
 }
-.social-media{
+
+.social-media {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -25,6 +26,6 @@ footer p{
 
 .social-media img:nth-child(1),
 .social-media img:nth-child(2),
-.social-media img:nth-child(3){
+.social-media img:nth-child(3) {
     width: 40px;
 }

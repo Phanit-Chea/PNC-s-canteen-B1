@@ -8,7 +8,11 @@
 }
 
 nav {
+<<<<<<< HEAD
   background-color: white;
+=======
+  background-color: rgba(18, 18, 19, 0.487);
+>>>>>>> b178a40c02ac2718ba3ff9d75f3a50889c59dc4a
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,9 +21,14 @@ nav .nav-left {
   flex: 1;
 }
 nav .nav-left img {
+<<<<<<< HEAD
   width: 90px;
   padding: 10px 80px;
   box-shadow: none;
+=======
+  width: 80px;
+  padding: 10px 80px;
+>>>>>>> b178a40c02ac2718ba3ff9d75f3a50889c59dc4a
 }
 nav .nav-right {
   flex: 1;
@@ -29,6 +38,29 @@ nav .nav-right ul {
   align-items: center;
   justify-content: space-evenly;
   font-size: 20px;
+<<<<<<< HEAD
+}
+nav .nav-right ul li a:hover {
+  color: purple;
+}
+nav .nav-right ul li:hover {
+  border-bottom: 3px solid orange;
+}
+nav .nav-right ul li:nth-child(3) {
+  border: 3px solid orange;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+nav .nav-right ul li:nth-child(3):hover {
+  background-color: orange;
+  border: none;
+}
+nav .nav-right ul li:nth-child(3):hover a {
+  color: purple;
+}
+nav .nav-right ul li:nth-child(2) .another {
+  display: none;
+=======
 }
 nav .nav-right ul li a:hover {
   color: purple;
@@ -52,8 +84,27 @@ nav .nav-right ul li:nth-child(2) .another {
   display: none;
 }
 
+li:nth-child(2):hover .another {
+  display: block;
+  background-color: wheat;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+li:nth-child(2):hover .another ul {
+  display: block;
+  margin: 10px;
+}
+
+li:nth-child(2):hover .another ul li {
+  width: 100px;
+  padding: 10px;
+  background-color: wheat;
+>>>>>>> b178a40c02ac2718ba3ff9d75f3a50889c59dc4a
+}
+
 footer {
-  background-image: linear-gradient(rgb(18, 100, 133), rgb(94, 94, 177));
+  background-image: linear-gradient(rgba(98, 150, 217, 0.603), rgb(15, 79, 163));
   display: flex;
   justify-content: space-around;
   padding: 10px;

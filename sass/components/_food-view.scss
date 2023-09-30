@@ -1,0 +1,65 @@
+.food-overview {
+    padding: 20px 90px;
+    display: flex;
+    gap: 40px;
+    background-color: $orange;
+
+    .left {
+        flex: 0.4;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+
+        h1 {
+            padding-bottom: 10px;
+        }
+    }
+
+    .right {
+        flex: 1;
+        display: flex;
+
+        .card-food {
+            border: 4px solid $orange;
+            padding: 10px;
+            border-radius: 20px;
+
+            .top1 {
+                height: 30vh;
+                background-image: url(../images/Koko-shoup.jpg);
+                background-size: cover;
+                background-position: center;
+                box-shadow: 2px 1px 1px $text-color;
+                overflow: hidden;
+            }
+
+            .food-des {
+                background-color: $white;
+                text-align: center;
+                padding: 10px;
+                box-shadow: 2px 1px 1px $text-color;
+            }
+
+            .top2 {
+                height: 30vh;
+                background-image: url(../images/Baby-corn.jpg);
+                background-size: cover;
+                background-position: center;
+                box-shadow: 2px 1px 1px $text-color;
+            }
+
+            .top3 {
+                height: 30vh;
+                background-image: url(../images/Morning-glory.jpg);
+                background-size: cover;
+                background-position: center;
+                box-shadow: 2px 1px 1px $text-color;
+            }
+
+            .card-food:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}

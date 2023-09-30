@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0;
@@ -52,6 +53,8 @@ nav .nav-right ul li:nth-child(2) .another {
   display: none;
 }
 
+=======
+>>>>>>> b178a40c02ac2718ba3ff9d75f3a50889c59dc4a
 footer {
   background-image: linear-gradient(rgb(18, 100, 133), rgb(94, 94, 177));
   display: flex;
@@ -84,200 +87,242 @@ footer p {
   width: 40px;
 }
 
-.card-images1 {
-  width: 440px;
-  height: 250px;
-  background-color: orange;
-  border-radius: 80px 0px 0px 80px;
-}
-
-.card-images1 img {
-  width: 36%;
-  right: 250px;
-  top: 825px;
-  cursor: pointer;
-  position: absolute;
-}
-
-.card-images2 {
-  width: 440px;
-  height: 250px;
-  background-color: orange;
-  border-radius: 80px 0px 0px 80px;
-}
-
-.card-images2 img {
-  width: 29%;
-  right: 310px;
-  top: 1230px;
-  cursor: pointer;
-  position: absolute;
-}
-
-.card-images3 {
-  width: 440px;
-  height: 250px;
-  background-color: orange;
-  border-radius: 80px 0px 0px 80px;
-}
-
-.card-images3 img {
-  width: 23%;
-  right: 350px;
-  top: 1595px;
-  cursor: pointer;
-  position: absolute;
-}
-
-.card-images1:hover {
-  border: 5px solid rgb(15, 79, 163);
-}
-
-.card-images2:hover {
-  border: 5px solid rgb(15, 79, 163);
-}
-
-.card-images3:hover {
-  border: 5px solid rgb(15, 79, 163);
-}
-
-.card {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
-  gap: 20px;
-}
-
-.card h3 {
-  width: 120px;
-  padding: 10px;
-  font-size: 20px;
-  text-align: center;
-  background-color: orange;
-}
-
-.card h3:hover {
-  background-color: rgb(15, 79, 163);
-  cursor: pointer;
-  color: white;
-}
-
-.about-us,
-.lunch,
-.dinner,
-.breakfast {
-  background-color: white;
-  margin: 20px;
-}
-
-.breakfast-schedule,
-.lunch-schedule,
-.dinner-schedule {
-  display: flex;
-  justify-content: space-around;
-}
-
-.dinner h2,
-.lunch h2,
-.breakfast h2 {
-  padding: 40px;
-  margin-left: 30px;
-}
-
-.breakfast-schedule p,
-.dinner-schedule p,
-.lunch-schedule p {
-  font-size: 20px;
-  padding: 10px;
-}
-
-.food-schedule {
-  width: 45%;
-}
-
-header {
-  background-image: url(../../../images/Background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 90vh;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-header .text {
+nav {
+  background-color: rgba(18, 18, 19, 0.487);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 60px;
+}
+nav .nav-left {
+  flex: 1;
+}
+nav .nav-left img {
+  width: 80px;
+  padding: 10px 80px;
+}
+nav .nav-right {
+  flex: 1;
+}
+nav .nav-right ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 20px;
+}
+nav .nav-right ul li a:hover {
+  color: purple;
+}
+nav .nav-right ul li:hover {
+  border-bottom: 3px solid orange;
+}
+nav .nav-right ul li:nth-child(3) {
+  border: 3px solid orange;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+nav .nav-right ul li:nth-child(3):hover {
+  background-color: orange;
+  border: none;
+}
+nav .nav-right ul li:nth-child(3):hover a {
+  color: purple;
+}
+nav .nav-right ul li:nth-child(2) .another {
+  display: none;
 }
 
-header .text .info {
-  padding: 50px 150px;
+li:nth-child(2):hover .another {
+  display: block;
+  background-color: wheat;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+li:nth-child(2):hover .another ul {
+  display: block;
+  margin: 10px;
+}
+
+li:nth-child(2):hover .another ul li {
+  width: 100px;
+  padding: 10px;
+  background-color: wheat;
+}
+
+.about-us {
+  padding: 20px 90px;
+  display: flex;
+  gap: 20px;
+}
+.about-us img {
+  border-radius: 20px;
+  flex: 1;
+  height: 50vh;
+}
+.about-us img:hover {
+  box-shadow: 4px 10px 10px orange;
+}
+.about-us .info {
+  flex: 0.7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about-us .info .info h1 {
+  color: orange;
+  padding: 20px;
+}
+
+.chef {
+  padding: 20px 90px;
+}
+
+.chef h1 {
   text-align: center;
+  padding: 20px;
+}
+
+.chef .chef-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.chef .chef-info .info {
+  background-color: orange;
+}
+
+.chef .chef-info .info img {
+  width: 400px;
+  height: 40vh;
+}
+
+.chef .chef-info .info h2 {
+  padding: 10px;
+  text-align: center;
+}
+
+.chef .chef-info .info p {
+  padding: 10px;
+  text-align: center;
+}
+
+.food-overview {
+  padding: 20px 90px;
+  display: flex;
+  gap: 40px;
+  background-color: orange;
+}
+
+.food-overview .left {
+  flex: 0.4;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.food-overview .left h1 {
+  padding-bottom: 10px;
+}
+
+.food-overview .right {
+  flex: 1;
+  display: flex;
+}
+
+.food-overview .right .card-food {
+  border: 4px solid white;
+  padding: 10px;
   border-radius: 20px;
 }
 
-header .text .info h1 {
-  font-size: 60px;
-  color: white;
+.food-overview .right .card-food .top1 {
+  height: 30vh;
+  background-image: url(../images/Koko-shoup.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 2px 1px 1px black;
+  overflow: hidden;
 }
 
-header .text .info span {
-  font-size: 25px;
-  color: white;
+.food-overview .right .card-food .food-des {
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 2px 1px 1px black;
 }
 
-header .text .info p {
-  font-size: 30px;
-  color: white;
+.food-overview .right .card-food .top2 {
+  height: 30vh;
+  background-image: url(../images/Baby-corn.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 2px 1px 1px black;
+}
+
+.food-overview .right .card-food .top3 {
+  height: 30vh;
+  background-image: url(../images/Morning-glory.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 2px 1px 1px black;
+}
+
+.food-overview .right .card-food:hover {
+  cursor: pointer;
+}
+
+.service {
+  padding: 20px 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service .word {
+  flex: 1;
+  text-align: center;
+}
+
+.service .word h1 {
+  font-weight: bold;
   padding-bottom: 20px;
 }
 
-header .text .info a button {
-  border: none;
-  border-radius: 20px;
-  padding: 10px 40px;
-  background-color: orange;
-  font-size: 25px;
-  color: white;
-}
-
-.about-us h2 {
-  text-align: center;
-  font-size: 30px;
-}
-
-.detail-about-us {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.about-images img {
-  width: 80%;
-  margin-left: 50px;
-}
-
-.about-text span {
+.service .word h1 span {
   color: orange;
 }
 
-.about-text {
-  font-size: 25px;
+.service .main-point {
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  border-radius: 20px;
 }
 
-.about-text a {
-  width: 100px;
-  background-color: orange;
-  color: black;
-  font-size: 20px;
-  padding: 6px 10px;
-  margin-top: 40px;
-  display: block;
-  border-radius: 5px;
-  text-decoration: none;
-  text-align: center;
+.service .main-point .meaning {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.service .main-point .meaning .img {
+  flex: 0.3;
+}
+
+.service .main-point .meaning .img img {
+  background-color: white;
+  width: 60px;
+  align-items: center;
+  padding: 5px;
+  border-radius: 60px;
+}
+
+.service .main-point .meaning .text-des {
+  flex: 1;
 }
 
 * {
@@ -288,4 +333,4 @@ header .text .info a button {
 
 body {
   background-color: white;
-}
+}/*# sourceMappingURL=home.css.map */
