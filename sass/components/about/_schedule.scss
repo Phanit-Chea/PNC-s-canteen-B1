@@ -44,6 +44,15 @@
             }
         }
     }
+    .breakfast:hover{
+        border: 4px solid white;
+    }
+    .lunch:hover{
+        border: 4px solid white;
+    }
+    .dinner:hover{
+        border: 4px solid white;
+    }
 
     .lunch {
         @include style-schedule;

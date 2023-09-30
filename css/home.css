@@ -48,27 +48,6 @@ nav .nav-right ul li:nth-child(3):hover {
 nav .nav-right ul li:nth-child(3):hover a {
   color: purple;
 }
-nav .nav-right ul li:nth-child(2) .another {
-  display: none;
-}
-
-li:nth-child(2):hover .another {
-  display: block;
-  background-color: wheat;
-  margin-top: 15px;
-  margin-left: 15px;
-}
-
-li:nth-child(2):hover .another ul {
-  display: block;
-  margin: 10px;
-}
-
-li:nth-child(2):hover .another ul li {
-  width: 100px;
-  padding: 10px;
-  background-color: wheat;
-}
 
 footer {
   background-image: linear-gradient(rgba(98, 150, 217, 0.603), rgb(15, 79, 163));
