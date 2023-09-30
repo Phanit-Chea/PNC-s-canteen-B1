@@ -22,6 +22,9 @@
 .main p {
     color: $white;
     font-size: 25px;
+    @include responsive(phone){
+        
+    }
 }
 
 .main,

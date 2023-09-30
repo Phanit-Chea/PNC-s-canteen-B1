@@ -29,6 +29,7 @@ nav .nav-right ul {
   align-items: center;
   justify-content: space-evenly;
   font-size: 20px;
+  @in;
 }
 nav .nav-right ul li a:hover {
   color: purple;
