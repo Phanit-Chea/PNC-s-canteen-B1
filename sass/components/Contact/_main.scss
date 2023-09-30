@@ -17,13 +17,21 @@
 .main h1 {
     font-size: 90px;
     color: $white;
+    @include responsive(phone){
+        .main h1{
+            font-size: 50px;
+            color: white;
+        }
+    }
 }
 
 .main p {
     color: $white;
     font-size: 25px;
     @include responsive(phone){
-        
+        .main p{
+            font-size: 20px
+        }
     }
 }
 

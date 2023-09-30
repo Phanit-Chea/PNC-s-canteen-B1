@@ -29,7 +29,6 @@ nav .nav-right ul {
   align-items: center;
   justify-content: space-evenly;
   font-size: 20px;
-  @in;
 }
 nav .nav-right ul li a:hover {
   color: purple;
@@ -223,10 +222,21 @@ header {
   font-size: 90px;
   color: white;
 }
+@media screen and (max-width: 600px) {
+  .main h1 .main h1 {
+    font-size: 50px;
+    color: white;
+  }
+}
 
 .main p {
   color: white;
   font-size: 25px;
+}
+@media screen and (max-width: 600px) {
+  .main p .main p {
+    font-size: 20px;
+  }
 }
 
 .main,
