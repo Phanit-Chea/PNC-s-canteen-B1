@@ -52,6 +52,24 @@ nav .nav-right ul li:nth-child(2) .another {
   display: none;
 }
 
+li:nth-child(2):hover .another {
+  display: block;
+  background-color: wheat;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+li:nth-child(2):hover .another ul {
+  display: block;
+  margin: 10px;
+}
+
+li:nth-child(2):hover .another ul li {
+  width: 100px;
+  padding: 10px;
+  background-color: wheat;
+}
+
 footer {
   background-image: linear-gradient(rgba(98, 150, 217, 0.603), rgb(15, 79, 163));
   display: flex;
@@ -89,6 +107,18 @@ footer p {
   padding: 30px;
   gap: 30px;
 }
+@media screen and (max-width: 1024px) {
+  .feedback .feedback {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 600px) {
+  .feedback .feedback {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 form {
   width: 50%;
@@ -97,6 +127,17 @@ form {
   display: flex;
   flex-direction: column;
   padding: 10px;
+}
+@media screen and (max-width: 1024px) {
+  form form {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  form form {
+    width: 100%;
+    gap: 10px;
+  }
 }
 
 form button {
@@ -166,6 +207,16 @@ header {
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 1024px) {
+  .main .main {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main .main {
+    width: 100%;
+  }
+}
 
 .main h1 {
   font-size: 90px;
@@ -183,4 +234,4 @@ p {
   display: flex;
   justify-content: center;
   text-align: center;
-}
+}/*# sourceMappingURL=contact.css.map */

@@ -18,8 +18,9 @@ nav .nav-left {
   flex: 1;
 }
 nav .nav-left img {
-  width: 80px;
+  width: 90px;
   padding: 10px 80px;
+  box-shadow: none;
 }
 nav .nav-right {
   flex: 1;
@@ -50,6 +51,24 @@ nav .nav-right ul li:nth-child(3):hover a {
 }
 nav .nav-right ul li:nth-child(2) .another {
   display: none;
+}
+
+li:nth-child(2):hover .another {
+  display: block;
+  background-color: wheat;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+li:nth-child(2):hover .another ul {
+  display: block;
+  margin: 10px;
+}
+
+li:nth-child(2):hover .another ul li {
+  width: 100px;
+  padding: 10px;
+  background-color: wheat;
 }
 
 footer {
@@ -498,4 +517,4 @@ html {
   background-image: url(../../../images/ឆា.png);
   background-position: center;
   background-size: cover;
-}
+}/*# sourceMappingURL=about.css.map */

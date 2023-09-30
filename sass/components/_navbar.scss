@@ -1,21 +1,5 @@
 nav {
-<<<<<<< HEAD
-    background-color:white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    .nav-left{
-        flex: 1;
-        img{
-            width: 90px;
-            padding: 10px 80px;
-            box-shadow: none;
-        }
-    }
-    .nav-right {
-        flex: 1;
-=======
-    background-color: rgba(18, 18, 19, 0.487);
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,74 +8,52 @@ nav {
         flex: 1;
 
         img {
-            width: 80px;
+            width: 90px;
             padding: 10px 80px;
+            box-shadow: none;
         }
     }
 
     .nav-right {
         flex: 1;
 
->>>>>>> b178a40c02ac2718ba3ff9d75f3a50889c59dc4a
         ul {
             display: flex;
             align-items: center;
             justify-content: space-evenly;
             font-size: 20px;
-<<<<<<< HEAD
+
             li {
                 a:hover {
                     color: purple;
                 }
             }
+
             li:hover {
                 border-bottom: 3px solid orange;
             }
-            li:nth-child(3){
-                border: 3px solid orange;
-                padding: 5px 10px;
-                border-radius: 10px;
-            }
-            li:nth-child(3):hover{
-                background-color: orange;
-                border:none;
-                a {
-                    color:purple;
-                }
-            }
-            li:nth-child(2) .another{
-=======
-
-            li {
-                a:hover {
-                    color: $purple;
-                }
-            }
-
-            li:hover {
-                border-bottom: 3px solid $orange;
-            }
 
             li:nth-child(3) {
-                border: 3px solid $orange;
+                border: 3px solid orange;
                 padding: 5px 10px;
                 border-radius: 10px;
             }
 
             li:nth-child(3):hover {
-                background-color: $orange;
+                background-color: orange;
                 border: none;
 
                 a {
-                    color: $purple;
+                    color: purple;
                 }
             }
 
             li:nth-child(2) .another {
->>>>>>> b178a40c02ac2718ba3ff9d75f3a50889c59dc4a
                 display: none;
             }
+            @
         }
+
     }
 }
 

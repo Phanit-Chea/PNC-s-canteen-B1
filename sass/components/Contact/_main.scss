@@ -2,6 +2,16 @@
     background-color:$nav-bg;
     width: 50%;
     @include df-column;
+    @include responsive(tablet){
+        .main{
+            width: 100%;
+        }
+    }
+    @include responsive(phone){
+        .main{
+            width: 100%;
+        }
+    }
 }
 
 .main h1 {
