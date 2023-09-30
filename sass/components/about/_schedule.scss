@@ -1,0 +1,145 @@
+.text-schedule{
+    padding: 50px 90px;
+    text-align: center;
+    h1{
+        border-bottom: 4px solid orange;
+        border-top: 4px solid orange;
+        width: 30%;
+        margin-left: 30%;
+        padding: 10px;
+    }
+    p{
+        padding: 10px;
+        font-size: 18px;
+    }
+}
+.schedule {
+    padding: 20px 90px;
+    display: flex;
+    background-color: wheat;
+    justify-content: space-evenly;
+
+    .breakfast {
+        flex: 1;
+        background-color: orange;
+        border-right: 4px solid wheat;
+        box-shadow: 10px 10px 5px orange;
+
+        .picture {
+            img {
+                width: 370px;
+                margin: 10px 10px;
+    
+
+            }
+        }
+        .menu{
+            padding: 20px;
+            background-color: white;
+            margin: 10px;
+            .text{
+                h1{
+                    font-size: 29px;
+                }
+                p{
+                    color: orange;
+                    font-weight: bold;
+                    font-size: 18px;
+                }
+            }
+            .n-food{
+                .each-food{
+                    display: flex;
+                    justify-content: space-between;
+                    p{
+                        padding: 5px 0px;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .lunch {
+        background-color: orange;
+        flex: 1;
+        border-right: 4px solid wheat;
+        box-shadow: 2px 10px 2px orange;
+
+        .picture {
+            img {
+                width: 370px;
+                margin: 10px 10px;
+    
+
+            }
+        }
+        .menu{
+            padding: 20px;
+            background-color: white;
+            margin: 10px;
+            .text{
+                h1{
+                    font-size: 29px;
+                }
+                p{
+                    color: orange;
+                    font-weight: bold;
+                    font-size: 18px;
+                }
+            }
+            .n-food{
+                .each-food{
+                    display: flex;
+                    justify-content: space-between;
+                    border-bottom: 4px solid orange;
+                    p{
+                        padding: 5px 0px;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .dinner {
+        background-color: orange;
+        flex: 1;
+        box-shadow: 10px 10px 5px orange;
+
+        .picture {
+            img {
+                width: 370px;
+                margin: 10px 10px;
+    
+
+            }
+        }
+        .menu{
+            padding: 10px;
+            background-color: white;
+            margin: 10px;
+            .text{
+                h1{
+                    font-size: 29px;
+                }
+                p{
+                    color: orange;
+                    font-weight: bold;
+                    font-size: 18px;
+                }
+            }
+            .n-food{
+                .each-food{
+                    display: flex;
+                    justify-content: space-between;
+                    border-bottom: 4px solid orange;
+                    p{
+                        padding: 5px 0px;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

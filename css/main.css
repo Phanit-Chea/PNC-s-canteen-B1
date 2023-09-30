@@ -8,34 +8,48 @@
 }
 
 nav {
+  background-color: white;
   display: flex;
-  background-color: rgba(103, 32, 2, 0.6509803922);
-  padding: 10px;
+  align-items: center;
+  justify-content: center;
 }
-
 nav .nav-left {
-  flex: 0.5;
+  flex: 1;
 }
-
 nav .nav-left img {
-  width: 200px;
+  width: 90px;
+  padding: 10px 80px;
+  box-shadow: none;
 }
-
 nav .nav-right {
   flex: 1;
-  display: grid;
-  align-items: center;
 }
-
 nav .nav-right ul {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 20px;
 }
-
-nav .nav-right ul li a {
-  color: white;
-  font-weight: bold;
+nav .nav-right ul li a:hover {
+  color: purple;
+}
+nav .nav-right ul li:hover {
+  border-bottom: 3px solid orange;
+}
+nav .nav-right ul li:nth-child(3) {
+  border: 3px solid orange;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+nav .nav-right ul li:nth-child(3):hover {
+  background-color: orange;
+  border: none;
+}
+nav .nav-right ul li:nth-child(3):hover a {
+  color: purple;
+}
+nav .nav-right ul li:nth-child(2) .another {
+  display: none;
 }
 
 footer {
@@ -68,4 +82,4 @@ footer p {
 .social-media img:nth-child(2),
 .social-media img:nth-child(3) {
   width: 40px;
-}/*# sourceMappingURL=main.css.map */
+}

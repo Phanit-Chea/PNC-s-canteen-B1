@@ -1,0 +1,55 @@
+.menu-breakfast{
+    padding: 20px 90px;
+    h1{
+        color: orange;
+        padding-bottom: 20px;
+    }
+    .group-food{
+        display: flex;
+        justify-content: space-between;
+        .card-food{
+            background-color: wheat;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border: 4px solid white;
+            .top{
+                img{
+                    width: 210px;
+                    margin: 10px 10px;
+                }
+            }
+            .center{
+                text-align: center;
+                padding: 5px;
+                p{
+                    font-size: 18px;
+                }
+            }
+            .bottom{
+                margin-left: 20px;
+                padding:10px;
+                a{
+                    button{
+                        background-color: orange;
+                        padding: 10px 40px;
+                        border: 4px solid white;
+                        border-radius: 20px;
+                        font-size: 18px;
+                    }
+                }
+                a:hover{
+                    button{
+                        background-color: white;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .card-food:hover{
+            background-color: white;
+            border: 4px solid orange;
+            box-shadow: 2px 2px 2px orange;
+        }
+       
+    }
+}
