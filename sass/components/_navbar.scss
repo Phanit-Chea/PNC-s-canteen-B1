@@ -1,27 +1,63 @@
-nav{
+nav {
+    background-color:rgba(18, 18, 19, 0.487);
     display: flex;
-    background-color: #672002a6;
-    padding: 10px;
-}
-nav .nav-left {
-    flex: 0.5;
-}
-nav .nav-left img{
-    width: 200px;
-}
-nav .nav-right{
-    flex: 1;
-    display: grid;
     align-items: center;
+    justify-content: center;
+    .nav-left{
+        flex: 1;
+        img{
+            width: 80px;
+            padding: 10px 80px;
+        }
+    }
+    .nav-right {
+        flex: 1;
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            font-size: 20px;
+            li {
+                a:hover {
+                    color: purple;
+                }
+            }
+            li:hover {
+                border-bottom: 3px solid orange;
+            }
+            li:nth-child(3){
+                border: 3px solid orange;
+                padding: 5px 10px;
+                border-radius: 10px;
+            }
+            li:nth-child(3):hover{
+                background-color: orange;
+                border:none;
+                a {
+                    color:purple;
+                }
+            }
+            li:nth-child(2) .another{
+                display: none;
+            }
+        }
+    }
 }
-nav .nav-right ul{
-   display: grid;
-   grid-template-columns: repeat(3,1fr);
-   font-size: 25px;
+li:nth-child(2):hover .another{
+    display: block;
+    background-color: wheat;
+    margin-top: 15px;margin-left: 15px;
+
+
 }
-nav .nav-right ul li a {
-    color: white;
-    font-weight: bold;
+li:nth-child(2):hover .another ul {
+    display: block;
+    margin: 10px;
 }
 
+li:nth-child(2):hover .another ul li {
+    width: 100px;
+    padding: 10px;
+    background-color: wheat;
+}
 
