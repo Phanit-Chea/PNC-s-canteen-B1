@@ -1,22 +1,28 @@
 .chef {
     padding: 20px 90px;
+
     h1 {
         text-align: center;
         padding: 20px;
     }
+
     .chef-info {
         display: flex;
         justify-content: space-between;
+
         .info {
             background-color: $orange;
+
             img {
                 width: 400px;
                 height: 40vh;
             }
+
             .info h2 {
                 padding: 10px;
                 text-align: center;
             }
+
             .info p {
                 padding: 10px;
                 text-align: center;

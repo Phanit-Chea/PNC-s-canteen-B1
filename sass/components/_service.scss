@@ -3,49 +3,50 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
 
-.service .word {
-    flex: 1;
-    text-align: center;
-}
+    .word {
+        flex: 1;
+        text-align: center;
 
-.service .word h1 {
-    font-weight: bold;
-    padding-bottom: 20px;
-}
+        h1 {
+            font-weight: bold;
+            padding-bottom: 20px;
+        }
 
-.service .word h1 span {
-    color: orange;
-}
+        span {
+            color: $orange;
+        }
 
-.service .main-point {
-    background-color: orange;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-    border-radius: 20px;
-}
+    }
 
-.service .main-point .meaning {
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-}
+    .main-point {
+        background-color: $orange;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        border-radius: 20px;
 
-.service .main-point .meaning .img {
-    flex: 0.3;
-}
+        .meaning {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
 
-.service .main-point .meaning .img img {
-    background-color: white;
-    width: 60px;
-    align-items: center;
-    padding: 5px;
-    border-radius: 60px;
-}
+            .img {
+                flex: 0.3;
 
-.service .main-point .meaning .text-des {
-    flex: 1;
+                img {
+                    background-color: $white;
+                    width: 60px;
+                    align-items: center;
+                    padding: 5px;
+                    border-radius: 60px;
+                }
+            }
+
+            .text-des {
+                flex: 1;
+            }
+        }
+    }
 }

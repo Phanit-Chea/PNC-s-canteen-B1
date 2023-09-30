@@ -2,64 +2,64 @@
     padding: 20px 90px;
     display: flex;
     gap: 40px;
-    background-color: orange;
-}
+    background-color: $orange;
 
-.food-overview .left {
-    flex: 0.4;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-}
+    .left {
+        flex: 0.4;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
 
-.food-overview .left h1 {
-    padding-bottom: 10px;
-}
+        h1 {
+            padding-bottom: 10px;
+        }
+    }
 
-.food-overview .right {
-    flex: 1;
-    display: flex;
-}
+    .right {
+        flex: 1;
+        display: flex;
 
-.food-overview .right .card-food {
-    border: 4px solid white;
-    padding: 10px;
-    border-radius: 20px;
-}
+        .card-food {
+            border: 4px solid $orange;
+            padding: 10px;
+            border-radius: 20px;
 
-.food-overview .right .card-food .top1 {
-    height: 30vh;
-    background-image: url(../images/Koko-shoup.jpg);
-    background-size: cover;
-    background-position: center;
-    box-shadow: 2px 1px 1px black;
-    overflow: hidden;
-}
+            .top1 {
+                height: 30vh;
+                background-image: url(../images/Koko-shoup.jpg);
+                background-size: cover;
+                background-position: center;
+                box-shadow: 2px 1px 1px $text-color;
+                overflow: hidden;
+            }
 
-.food-overview .right .card-food .food-des {
-    background-color: white;
-    text-align: center;
-    padding: 10px;
-    box-shadow: 2px 1px 1px black;
-}
+            .food-des {
+                background-color: $white;
+                text-align: center;
+                padding: 10px;
+                box-shadow: 2px 1px 1px $text-color;
+            }
 
-.food-overview .right .card-food .top2 {
-    height: 30vh;
-    background-image: url(../images/Baby-corn.jpg);
-    background-size: cover;
-    background-position: center;
-    box-shadow: 2px 1px 1px black;
-}
+            .top2 {
+                height: 30vh;
+                background-image: url(../images/Baby-corn.jpg);
+                background-size: cover;
+                background-position: center;
+                box-shadow: 2px 1px 1px $text-color;
+            }
 
-.food-overview .right .card-food .top3 {
-    height: 30vh;
-    background-image: url(../images/Morning-glory.jpg);
-    background-size: cover;
-    background-position: center;
-    box-shadow: 2px 1px 1px black;
-}
+            .top3 {
+                height: 30vh;
+                background-image: url(../images/Morning-glory.jpg);
+                background-size: cover;
+                background-position: center;
+                box-shadow: 2px 1px 1px $text-color;
+            }
 
-.food-overview .right .card-food:hover {
-    cursor: pointer;
+            .card-food:hover {
+                cursor: pointer;
+            }
+        }
+    }
 }
