@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inria Sans", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav .nav-left {
+  flex: 1;
+}
+nav .nav-left img {
+  width: 90px;
+  padding: 10px 80px;
+  box-shadow: none;
+}
+nav .nav-right {
+  flex: 1;
+}
+nav .nav-right ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 20px;
+}
+nav .nav-right ul li a:hover {
+  color: purple;
+}
+nav .nav-right ul li:hover {
+  border-bottom: 3px solid orange;
+}
+nav .nav-right ul li:nth-child(3) {
+  border: 3px solid orange;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+nav .nav-right ul li:nth-child(3):hover {
+  background-color: orange;
+  border: none;
+}
+nav .nav-right ul li:nth-child(3):hover a {
+  color: purple;
+}
+nav .nav-right ul li:nth-child(2) .another {
+  display: none;
+}
+
+li:nth-child(2):hover .another {
+  display: block;
+  background-color: wheat;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+li:nth-child(2):hover .another ul {
+  display: block;
+  margin: 10px;
+}
+
+li:nth-child(2):hover .another ul li {
+  width: 100px;
+  padding: 10px;
+  background-color: wheat;
+}
+
+footer {
+  background-image: linear-gradient(rgba(98, 150, 217, 0.603), rgb(15, 79, 163));
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  height: 35vh;
+}
+
+footer h2,
+footer p {
+  color: white;
+  padding: 10px;
+}
+
+.media-images,
+.media-name {
+  width: 50px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+.social-media img:nth-child(1),
+.social-media img:nth-child(2),
+.social-media img:nth-child(3) {
+  width: 40px;
+}
+
+.about-us {
+  padding: 20px 90px;
+  display: flex;
+  gap: 20px;
+}
+.about-us img {
+  border-radius: 20px;
+  flex: 1;
+  height: 50vh;
+}
+.about-us img:hover {
+  box-shadow: 4px 10px 10px orange;
+}
+.about-us .info {
+  flex: 0.7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about-us .info .info h1 {
+  color: orange;
+  padding: 20px;
+}
+
+.chef {
+  padding: 20px 90px;
+}
+.chef h1 {
+  text-align: center;
+  padding: 20px;
+}
+.chef .chef-info {
+  display: flex;
+  justify-content: space-between;
+}
+.chef .chef-info .info {
+  background-color: orange;
+}
+.chef .chef-info .info img {
+  width: 400px;
+  height: 40vh;
+}
+.chef .chef-info .info .info h2 {
+  padding: 10px;
+  text-align: center;
+}
+.chef .chef-info .info .info p {
+  padding: 10px;
+  text-align: center;
+}
+
+.food-overview {
+  padding: 20px 90px;
+  display: flex;
+  gap: 40px;
+  background-color: orange;
+}
+.food-overview .left {
+  flex: 0.4;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+.food-overview .left h1 {
+  padding-bottom: 10px;
+}
+.food-overview .right {
+  flex: 1;
+  display: flex;
+}
+.food-overview .right .card-food {
+  border: 4px solid orange;
+  padding: 10px;
+  border-radius: 20px;
+}
+.food-overview .right .card-food .top1 {
+  height: 30vh;
+  background-image: url(../images/Koko-shoup.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 2px 1px 1px black;
+  overflow: hidden;
+}
+.food-overview .right .card-food .food-des {
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 2px 1px 1px black;
+}
+.food-overview .right .card-food .top2 {
+  height: 30vh;
+  background-image: url(../images/Baby-corn.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 2px 1px 1px black;
+}
+.food-overview .right .card-food .top3 {
+  height: 30vh;
+  background-image: url(../images/Morning-glory.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 2px 1px 1px black;
+}
+.food-overview .right .card-food .card-food:hover {
+  cursor: pointer;
+}
+
+.service {
+  padding: 20px 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.service .word {
+  flex: 1;
+  text-align: center;
+}
+.service .word h1 {
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.service .word span {
+  color: orange;
+}
+.service .main-point {
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  border-radius: 20px;
+}
+.service .main-point .meaning {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+.service .main-point .meaning .img {
+  flex: 0.3;
+}
+.service .main-point .meaning .img img {
+  background-color: white;
+  width: 60px;
+  align-items: center;
+  padding: 5px;
+  border-radius: 60px;
+}
+.service .main-point .meaning .text-des {
+  flex: 1;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Inria Sans", sans-serif;
+}
+
+body {
+  background-color: white;
+}/*# sourceMappingURL=home.css.map */
