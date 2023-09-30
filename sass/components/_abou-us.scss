@@ -1,0 +1,26 @@
+.about-us {
+    padding: 20px 90px;
+    display: flex;
+    gap: 20px;
+
+    img {
+        border-radius: 20px;
+        flex: 1;
+        height: 50vh;
+    }
+
+    img:hover {
+        box-shadow: 4px 10px 10px $orange;
+    }
+    .info {
+        flex: 0.7;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .info h1 {
+            color: $orange;
+            padding: 20px;
+        }
+    }
+}
