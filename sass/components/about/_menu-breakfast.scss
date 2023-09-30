@@ -7,8 +7,14 @@
     .group-food{
         display: flex;
         justify-content: space-between;
+        @include responsive(tablet){
+            flex-wrap: wrap;
+        }
         .card-food{
             @include style-card;
+            @include responsive(tablet){
+                width: 47%;
+            }
             .top{
                 img{
                     width: 210px;

@@ -2,11 +2,16 @@
     padding: 20px 90px;
     .dinner-top{
         display: flex;
+        @include responsive(tablet){
+            flex-direction: column;
+        }
         img{
             flex: 1;
             width: 800px;
             height: 50vh;
-      
+            @include responsive(tablet){
+                width: 600px;
+            }      
         }
         img:hover{
             box-shadow: 4px 3px 2px gray;
@@ -43,6 +48,9 @@
             margin-bottom: 10px;
             border-radius: 20px;
             position: relative;
+            @include responsive(tablet){
+                width: 30%;
+            }
             p{
                 font-size: 25px;
                 color: white;

@@ -1,8 +1,13 @@
 .text-schedule{
     @include padding;
     text-align: center;
+  
     h1{
         @include h1;
+        @include responsive(tablet){
+            width: 60%;
+            margin-left: 120px;
+        }
     }
     p{
         padding: 10px;
@@ -14,6 +19,11 @@
     display: flex;
     background-color: $wheat;
     justify-content: space-evenly;
+    @include responsive(tablet){
+        flex-wrap: wrap;
+        gap: 30px;
+
+    }
 
     .breakfast {
         @include style-schedule;
@@ -82,6 +92,10 @@
                     }
                 }
             }
+        }
+        @include responsive(tablet){
+            display: flex;
+            flex-direction: column-reverse;
         }
     }
 
