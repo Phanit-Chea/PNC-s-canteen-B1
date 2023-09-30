@@ -20,6 +20,7 @@ nav .nav-left img {
   width: 90px;
   padding: 10px 80px;
   box-shadow: none;
+  @in;
 }
 nav .nav-right {
   flex: 1;

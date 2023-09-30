@@ -20,6 +20,7 @@ nav .nav-left img {
   width: 90px;
   padding: 10px 80px;
   box-shadow: none;
+  @in;
 }
 nav .nav-right {
   flex: 1;
@@ -107,18 +108,6 @@ footer p {
   padding: 30px;
   gap: 30px;
 }
-@media screen and (max-width: 1024px) {
-  .feedback .feedback {
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media screen and (max-width: 600px) {
-  .feedback .feedback {
-    display: flex;
-    flex-direction: column;
-  }
-}
 
 form {
   width: 50%;
@@ -129,12 +118,12 @@ form {
   padding: 10px;
 }
 @media screen and (max-width: 1024px) {
-  form form {
+  form {
     width: 100%;
   }
 }
 @media screen and (max-width: 600px) {
-  form form {
+  form {
     width: 100%;
     gap: 10px;
   }
@@ -200,6 +189,18 @@ header {
 .feedback {
   display: flex;
 }
+@media screen and (max-width: 1024px) {
+  .feedback {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 600px) {
+  .feedback {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .main {
   background-color: rgba(103, 32, 2, 0.4078431373);
@@ -208,12 +209,12 @@ header {
   flex-direction: column;
 }
 @media screen and (max-width: 1024px) {
-  .main .main {
+  .main {
     width: 100%;
   }
 }
 @media screen and (max-width: 600px) {
-  .main .main {
+  .main {
     width: 100%;
   }
 }
@@ -223,8 +224,8 @@ header {
   color: white;
 }
 @media screen and (max-width: 600px) {
-  .main h1 .main h1 {
-    font-size: 50px;
+  .main h1 {
+    font-size: 10px;
     color: white;
   }
 }
@@ -234,7 +235,7 @@ header {
   font-size: 25px;
 }
 @media screen and (max-width: 600px) {
-  .main p .main p {
+  .main p {
     font-size: 20px;
   }
 }

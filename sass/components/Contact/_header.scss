@@ -6,4 +6,13 @@ header {
 
 .feedback {
     display: flex;
+    @include responsive(tablet){
+            display: flex;
+            flex-direction: column;
+    }
+    @include responsive(phone){
+            display: flex;
+            flex-direction: column;
+    }
+    
 }

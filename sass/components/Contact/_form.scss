@@ -2,18 +2,7 @@
     display: flex;
     padding: 30px;
     gap: 30px;
-    @include responsive(tablet){
-        .feedback{
-            display: flex;
-            flex-direction: column;
-        }
-    }
-    @include responsive(phone){
-        .feedback{
-            display: flex;
-            flex-direction: column;
-        }
-    }
+ 
 }
 
 form {
@@ -24,15 +13,11 @@ form {
     flex-direction: column;
     padding: 10px;
     @include responsive(tablet){
-        form{
-            width: 100%;
-        }
+        width: 100%;
     }
     @include responsive(phone){
-        form{
-            width: 100%;
-            gap: 10px;
-        }
+        width: 100%;
+         gap:10px ;
     }
 }
 
