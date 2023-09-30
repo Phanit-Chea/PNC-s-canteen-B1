@@ -1,5 +1,36 @@
 .menu-lunch{
+    @include padding;
     h3{
-        font-size: 40px;
+        font-size: 28px;
+        color: $orange;
+        padding-bottom: 20px;
+    }
+    .c-food{
+        display: flex;
+        justify-content: space-between;
+        .box{
+            background-color: $orange;
+            border: 4px solid $white;
+            border-top-left-radius:20px ;
+            border-bottom-right-radius:20px ;
+            img{
+                width: 210px;
+                padding: 10px;
+            }
+            h2{
+                text-align: center;
+            }
+            p{
+                text-align: center;
+                padding: 10px;
+            }
+            
+        }
+        .box:hover{
+            background-color: $white;
+            cursor: pointer;
+            border: 4px solid $orange;
+            box-shadow: 2px 2px 4px $orange;
+        }
     }
 }
