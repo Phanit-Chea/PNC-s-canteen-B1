@@ -61,7 +61,8 @@
                     align-items: center;
                     padding: 5px;
                     border-radius: 60px;
-                    @include responsive(tablet){
+
+                    @include responsive(tablet) {
                         width: 40px;
 
                     }
