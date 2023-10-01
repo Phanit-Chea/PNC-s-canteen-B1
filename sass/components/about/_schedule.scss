@@ -1,31 +1,38 @@
-.text-schedule{
+.text-schedule {
     @include padding;
     text-align: center;
-    @include responsive(phone){
-        padding: 10px 30px;
+
+    @include responsive(tablet) {
+        padding: 10px 10px;
     }
-    h1{
+
+    h1 {
         @include h1;
-        @include responsive(tablet){
+
+        @include responsive(tablet) {
             width: 60%;
             margin-left: 120px;
         }
-        @include responsive(phone){
+
+        @include responsive(phone) {
             width: 80%;
             margin-left: 20px;
         }
     }
-    p{
+
+    p {
         padding: 10px;
         font-size: 18px;
     }
 }
+
 .schedule {
     padding: 20px 90px;
     display: flex;
     background-color: $wheat;
     justify-content: space-evenly;
-    @include responsive(tablet){
+
+    @include responsive(tablet) {
         flex-wrap: wrap;
         gap: 30px;
 
@@ -33,26 +40,35 @@
 
     .breakfast {
         @include style-schedule;
+
         .picture {
             img {
                 @include img-schedule;
+                @include resp(tablet){
+                    width: 100%;
+                }
 
             }
         }
-        .menu{
+
+        .menu {
             @include menu-schedule;
-            .text{
-                h1{
+
+            .text {
+                h1 {
                     font-size: 29px;
                 }
-                p{
-                   @include p-schedule;
+
+                p {
+                    @include p-schedule;
                 }
             }
-            .n-food{
-                .each-food{
+
+            .n-food {
+                .each-food {
                     @include style-g-card;
-                    p{
+
+                    p {
                         padding: 5px 0px;
                         font-size: 20px;
                     }
@@ -60,46 +76,56 @@
             }
         }
     }
-    .breakfast:hover{
+
+    .breakfast:hover {
         border: 4px solid white;
     }
-    .lunch:hover{
+
+    .lunch:hover {
         border: 4px solid white;
     }
-    .dinner:hover{
+
+    .dinner:hover {
         border: 4px solid white;
     }
 
     .lunch {
         @include style-schedule;
+
         .picture {
             img {
                 @include img-schedule;
             }
         }
-        .menu{
+
+        .menu {
             @include menu-schedule;
-            .text{
-                h1{
+
+            .text {
+                h1 {
                     font-size: 29px;
                 }
-                p{
+
+                p {
                     @include p-schedule;
-    
+
                 }
             }
-            .n-food{
-                .each-food{
+
+            .n-food {
+                .each-food {
                     @include style-g-card;
                     border-bottom: 4px solid orange;
-                    p{
+
+                    p {
                         padding: 5px 0px;
                         font-size: 20px;
                     }
                 }
             }
         }
-        @include responsive(tablet){
+
+        @include responsive(tablet) {
             display: flex;
             flex-direction: column-reverse;
         }
@@ -114,30 +140,35 @@
             img {
                 width: 370px;
                 margin: 10px 10px;
-    
+
 
             }
         }
-        .menu{
+
+        .menu {
             padding: 10px;
             background-color: white;
             margin: 10px;
-            .text{
-                h1{
+
+            .text {
+                h1 {
                     font-size: 29px;
                 }
-                p{
+
+                p {
                     color: orange;
                     font-weight: bold;
                     font-size: 18px;
                 }
             }
-            .n-food{
-                .each-food{
+
+            .n-food {
+                .each-food {
                     display: flex;
                     justify-content: space-between;
                     border-bottom: 4px solid orange;
-                    p{
+
+                    p {
                         padding: 5px 0px;
                         font-size: 20px;
                     }

@@ -35,13 +35,13 @@ nav {
                 border-bottom: 3px solid orange;
             }
 
-            li:nth-child(3) {
+            .feedback {
                 border: 3px solid orange;
                 padding: 5px 10px;
                 border-radius: 10px;
             }
 
-            li:nth-child(3):hover {
+            .feedback:hover {
                 background-color: orange;
                 border: none;
 
@@ -55,14 +55,6 @@ nav {
 
     }
 }
-// .another ul {
-//     padding: 0;
-// }
-// .another ul li,.another ul .more li  {
-//     float: left;
-//     background-color: rgb(222, 23, 23);
-//     width: 200px;
-//     height: 50px;
-//     line-height: 50px;
-//     opacity: 0.7;
-// }
+html{
+    scroll-behavior: smooth;
+}

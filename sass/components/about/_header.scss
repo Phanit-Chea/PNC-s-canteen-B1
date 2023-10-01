@@ -41,7 +41,8 @@ header {
             @include responsive(tablet) {
                 width: 80%;
             }
-            @include responsive(phone){
+
+            @include responsive(phone) {
                 width: 100%;
             }
 
@@ -53,13 +54,14 @@ header {
             margin-top: 20px;
             background-color: $wheat;
             width: 60%;
-            @include responsive(phone){
+
+            @include responsive(phone) {
                 font-size: 14px;
-                margin-left:80px;
-                width:70%;
+                margin-left: 80px;
+                width: 70%;
             }
         }
- 
+
     }
 
 }

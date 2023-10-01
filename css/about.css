@@ -37,16 +37,16 @@ nav .nav-right ul li a:hover {
 nav .nav-right ul li:hover {
   border-bottom: 3px solid orange;
 }
-nav .nav-right ul li:nth-child(3) {
+nav .nav-right ul .feedback {
   border: 3px solid orange;
   padding: 5px 10px;
   border-radius: 10px;
 }
-nav .nav-right ul li:nth-child(3):hover {
+nav .nav-right ul .feedback:hover {
   background-color: orange;
   border: none;
 }
-nav .nav-right ul li:nth-child(3):hover a {
+nav .nav-right ul .feedback:hover a {
   color: purple;
 }
 
@@ -310,6 +310,11 @@ html {
 
 .menu-breakfast {
   padding: 20px 100px;
+}
+@media screen and (max-width: 1024px) {
+  .menu-breakfast {
+    padding: 10px 40px;
+  }
 }
 @media screen and (max-width: 600px) {
   .menu-breakfast {

@@ -7,6 +7,9 @@
     text-decoration: none;
     color: black;
 }
+html {
+    scroll-behavior: smooth
+}
 @import "./group-mixin/variable";
 @import "./group-mixin/mixin";
 @import "./components/navbar";
