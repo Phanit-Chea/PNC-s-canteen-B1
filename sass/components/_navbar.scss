@@ -1,3 +1,4 @@
+@import "../responsives/responsive";
 nav {
     background-color: white;
     display: flex;
@@ -7,37 +8,36 @@ nav {
     top: 0;
     box-shadow: 2px 2px 4px white;
     z-index: 1;
-
     .nav-left {
         flex: 1;
-
+        @include responsive(phone){
+            flex: 0.3;
+        }
         img {
             width: 90px;
             padding: 10px 80px;
             box-shadow: none;
-
 
         }
     }
 
     .nav-right {
         flex: 1;
-
+        @include responsive(phone){
+            flex: 1.7;
+        }
         ul {
             display: flex;
             align-items: center;
             justify-content: space-evenly;
             font-size: 20px;
-            display: inline-block;
-            box-shadow: 2px 1px 1px white;
 
             li {
                 display: inline-block;
                 background-color: white;
-                border-bottom: 4px solid orange;
-
                 a:hover {
                     color: purple;
+
                 }
             }
 
@@ -69,11 +69,4 @@ nav {
 
 html {
     scroll-behavior: smooth;
-}
-li .add{
-    position: absolute;
-    display: block;
-}
-li .add li{
-    display: block;
 }

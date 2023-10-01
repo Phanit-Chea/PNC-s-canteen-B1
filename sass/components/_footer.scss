@@ -1,3 +1,4 @@
+@import "../responsives/responsive";
 footer {
     background-color: gray;
     display: flex;
@@ -28,4 +29,21 @@ footer p {
 .social-media img:nth-child(2),
 .social-media img:nth-child(3) {
     width: 40px;
+}
+.social-media img:nth-child(1),
+.social-media img:nth-child(2),
+.social-media img:nth-child(3) {
+    @include responsive(phone){
+        width: 10px;
+    }
+}
+footer h2{
+    @include responsive(phone){
+        font-size: 18px;
+    }
+}
+footer p{
+    @include responsive(phone){
+        font-size: 14px;
+    }
 }

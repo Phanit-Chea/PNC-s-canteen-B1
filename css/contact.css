@@ -24,6 +24,11 @@ nav {
 nav .nav-left {
   flex: 1;
 }
+@media screen and (max-width: 600px) {
+  nav .nav-left {
+    flex: 0.3;
+  }
+}
 nav .nav-left img {
   width: 90px;
   padding: 10px 80px;
@@ -32,18 +37,20 @@ nav .nav-left img {
 nav .nav-right {
   flex: 1;
 }
+@media screen and (max-width: 600px) {
+  nav .nav-right {
+    flex: 1.7;
+  }
+}
 nav .nav-right ul {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   font-size: 20px;
-  display: inline-block;
-  box-shadow: 2px 1px 1px white;
 }
 nav .nav-right ul li {
   display: inline-block;
   background-color: white;
-  border-bottom: 4px solid orange;
 }
 nav .nav-right ul li a:hover {
   color: purple;
@@ -66,15 +73,6 @@ nav .nav-right ul .feedback:hover a {
 
 html {
   scroll-behavior: smooth;
-}
-
-li .add {
-  position: absolute;
-  display: block;
-}
-
-li .add li {
-  display: block;
 }
 
 footer {
@@ -107,6 +105,26 @@ footer p {
 .social-media img:nth-child(2),
 .social-media img:nth-child(3) {
   width: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  .social-media img:nth-child(1),
+  .social-media img:nth-child(2),
+  .social-media img:nth-child(3) {
+    width: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer h2 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer p {
+    font-size: 14px;
+  }
 }
 
 .feedback {
