@@ -90,7 +90,14 @@ header {
 }
 @media screen and (max-width: 1024px) {
   header {
-    height: 80vh;
+    height: 65vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (max-width: 600px) {
+  header {
+    background-size: cover;
   }
 }
 header .text .text-head {
@@ -108,9 +115,20 @@ header .text .text-head h1 {
     padding: 50px 50px;
   }
 }
+@media screen and (max-width: 600px) {
+  header .text .text-head h1 {
+    font-size: 45px;
+    margin-top: 30px;
+  }
+}
 @media screen and (max-width: 1024px) {
   header .text .text-head {
     width: 80%;
+  }
+}
+@media screen and (max-width: 600px) {
+  header .text .text-head {
+    width: 100%;
   }
 }
 header .text .btn {
@@ -121,6 +139,13 @@ header .text .btn {
   background-color: wheat;
   width: 60%;
 }
+@media screen and (max-width: 600px) {
+  header .text .btn {
+    font-size: 14px;
+    margin-left: 80px;
+    width: 70%;
+  }
+}
 
 html {
   scroll-behavior: smooth;
@@ -129,6 +154,11 @@ html {
 .text-schedule {
   padding: 20px 100px;
   text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .text-schedule {
+    padding: 10px 30px;
+  }
 }
 .text-schedule h1 {
   border-bottom: 4px solid orange;
@@ -141,6 +171,12 @@ html {
   .text-schedule h1 {
     width: 60%;
     margin-left: 120px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .text-schedule h1 {
+    width: 80%;
+    margin-left: 20px;
   }
 }
 .text-schedule p {
@@ -275,6 +311,11 @@ html {
 .menu-breakfast {
   padding: 20px 100px;
 }
+@media screen and (max-width: 600px) {
+  .menu-breakfast {
+    padding: 10px 30px;
+  }
+}
 .menu-breakfast h1 {
   color: orange;
   padding-bottom: 20px;
@@ -299,9 +340,19 @@ html {
     width: 47%;
   }
 }
+@media screen and (max-width: 600px) {
+  .menu-breakfast .group-food .card-food {
+    width: 100%;
+  }
+}
 .menu-breakfast .group-food .card-food .top img {
   width: 210px;
   margin: 10px 10px;
+}
+@media screen and (max-width: 600px) {
+  .menu-breakfast .group-food .card-food .top img {
+    width: 324px;
+  }
 }
 .menu-breakfast .group-food .card-food .center {
   text-align: center;
@@ -334,6 +385,11 @@ html {
 .menu-lunch {
   padding: 20px 100px;
 }
+@media screen and (max-width: 600px) {
+  .menu-lunch {
+    padding: 10px 30px;
+  }
+}
 .menu-lunch h3 {
   font-size: 22px;
   color: orange;
@@ -363,6 +419,11 @@ html {
   width: 210px;
   padding: 10px;
 }
+@media screen and (max-width: 600px) {
+  .menu-lunch .c-food .box img {
+    width: 148px;
+  }
+}
 .menu-lunch .c-food .box h2 {
   text-align: center;
   font-size: 20px;
@@ -381,6 +442,11 @@ html {
 .soup-food {
   padding: 20px 100px;
 }
+@media screen and (max-width: 600px) {
+  .soup-food {
+    padding: 10px 30px;
+  }
+}
 .soup-food h2 {
   color: orange;
   padding-bottom: 20px;
@@ -394,9 +460,20 @@ html {
     flex-wrap: wrap;
   }
 }
+@media screen and (max-width: 600px) {
+  .soup-food .G-food {
+    flex-wrap: wrap;
+  }
+}
 @media screen and (max-width: 1024px) {
   .soup-food .G-food .card {
-    width: 50%;
+    width: 45%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .soup-food .G-food .card {
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
 .soup-food .G-food .card img {
@@ -411,6 +488,11 @@ html {
     width: 260px;
   }
 }
+@media screen and (max-width: 600px) {
+  .soup-food .G-food .card img {
+    width: 343px;
+  }
+}
 .soup-food .G-food .card .text {
   text-align: center;
   padding: 10px;
@@ -423,7 +505,12 @@ html {
 }
 
 .menu-dinner {
-  padding: 20px 90px;
+  padding: 20px 100px;
+}
+@media screen and (max-width: 600px) {
+  .menu-dinner {
+    padding: 10px 30px;
+  }
 }
 .menu-dinner .dinner-top {
   display: flex;
@@ -441,6 +528,11 @@ html {
 @media screen and (max-width: 1024px) {
   .menu-dinner .dinner-top img {
     width: 600px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .menu-dinner .dinner-top img {
+    width: 350px;
   }
 }
 .menu-dinner .dinner-top img:hover {
@@ -479,6 +571,11 @@ html {
 @media screen and (max-width: 1024px) {
   .menu-dinner .food-group .box {
     width: 30%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .menu-dinner .food-group .box {
+    width: 47%;
   }
 }
 .menu-dinner .food-group .box p {
@@ -565,4 +662,4 @@ html {
   background-image: url(../../../images/ឆា.png);
   background-position: center;
   background-size: cover;
-}/*# sourceMappingURL=about.css.map */
+}

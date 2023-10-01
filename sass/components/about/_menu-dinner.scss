@@ -1,5 +1,8 @@
 .menu-dinner{
-    padding: 20px 90px;
+    @include padding;
+    @include responsive(phone){
+        padding: 10px 30px;
+    }
     .dinner-top{
         display: flex;
         @include responsive(tablet){
@@ -11,7 +14,10 @@
             height: 50vh;
             @include responsive(tablet){
                 width: 600px;
-            }      
+            }   
+            @include responsive(phone){
+                width: 350px;
+            }   
         }
         img:hover{
             box-shadow: 4px 3px 2px gray;
@@ -50,6 +56,9 @@
             position: relative;
             @include responsive(tablet){
                 width: 30%;
+            }
+            @include responsive(phone){
+                width: 47%;
             }
             p{
                 font-size: 25px;

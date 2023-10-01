@@ -1,5 +1,8 @@
 .menu-breakfast{
     @include padding;
+    @include responsive(phone){
+        padding: 10px 30px;
+    }
     h1{
         color: $orange;
         padding-bottom: 20px;
@@ -15,10 +18,16 @@
             @include responsive(tablet){
                 width: 47%;
             }
+            @include responsive(phone){
+                width: 100%;
+            }
             .top{
                 img{
                     width: 210px;
                     margin: 10px 10px;
+                    @include responsive(phone){
+                        width: 324px;
+                    }
                 }
             }
             .center{

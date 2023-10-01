@@ -1,12 +1,18 @@
 .text-schedule{
     @include padding;
     text-align: center;
-  
+    @include responsive(phone){
+        padding: 10px 30px;
+    }
     h1{
         @include h1;
         @include responsive(tablet){
             width: 60%;
             margin-left: 120px;
+        }
+        @include responsive(phone){
+            width: 80%;
+            margin-left: 20px;
         }
     }
     p{

@@ -1,5 +1,8 @@
 .menu-lunch {
     @include padding;
+    @include responsive(phone){
+        padding: 10px 30px;
+    }
 
     h3 {
         font-size: 22px;
@@ -25,6 +28,9 @@
             img {
                 width: 210px;
                 padding: 10px;
+                @include responsive(phone){
+                    width: 148px;
+                }
             }
 
             h2 {
@@ -51,6 +57,9 @@
 
 .soup-food {
     @include padding;
+    @include responsive(phone){
+        padding: 10px 30px;
+    }
   
     h2{
         color: $orange;
@@ -62,9 +71,16 @@
         @include responsive(tablet){
             flex-wrap: wrap;
         }
+        @include responsive(phone){
+            flex-wrap: wrap;
+        }
         .card{
             @include responsive(tablet){
-                width: 50%;
+                width: 45%;
+            }
+            @include responsive(phone){
+                width: 100%;
+                margin-bottom: 20px;
             }
             img{
                 padding: 10px;
@@ -74,6 +90,9 @@
                 border-top-left-radius: 20px;
                 @include responsive (tablet){
                     width: 260px;
+                }
+                @include responsive(phone){
+                    width: 343px;
                 }
             }
             .text{
