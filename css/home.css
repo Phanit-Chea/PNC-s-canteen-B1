@@ -98,6 +98,18 @@ footer p {
   display: flex;
   gap: 20px;
 }
+@media screen and (max-width: 1024px) {
+  .about-us {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about-us {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .about-us img {
   border-radius: 20px;
   flex: 1;
@@ -129,12 +141,31 @@ footer p {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 1024px) {
+  .chef .chef-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 600px) {
+  .chef .chef-info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 .chef .chef-info .info {
   background-color: orange;
 }
 .chef .chef-info .info img {
   width: 400px;
   height: 40vh;
+}
+@media screen and (max-width: 1024px) {
+  .chef .chef-info .info img {
+    width: 900px;
+  }
 }
 .chef .chef-info .info .info h2 {
   padding: 10px;
@@ -151,6 +182,18 @@ footer p {
   gap: 40px;
   background-color: orange;
 }
+@media screen and (max-width: 1024px) {
+  .food-overview {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 600px) {
+  .food-overview {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .food-overview .left {
   flex: 0.4;
   display: flex;
@@ -164,6 +207,19 @@ footer p {
 .food-overview .right {
   flex: 1;
   display: flex;
+}
+@media screen and (max-width: 1024px) {
+  .food-overview .right {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 600px) {
+  .food-overview .right {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+  }
 }
 .food-overview .right .card-food {
   border: 4px solid orange;
@@ -202,11 +258,23 @@ footer p {
   cursor: pointer;
 }
 
-.service {
-  padding: 20px 90px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+@media screen and (max-width: 1024px) {
+  .service {
+    padding: 20px 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .service {
+    padding: 20px 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 .service .word {
   flex: 1;
@@ -226,6 +294,16 @@ footer p {
   align-items: center;
   width: 50%;
   border-radius: 20px;
+}
+@media screen and (max-width: 1024px) {
+  .service .main-point {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .service .main-point {
+    width: 100%;
+  }
 }
 .service .main-point .meaning {
   display: flex;

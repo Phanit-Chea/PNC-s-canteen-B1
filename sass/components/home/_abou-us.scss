@@ -3,6 +3,16 @@
     display: flex;
     gap: 20px;
 
+    @include responsive (tablet) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @include responsive (phone) {
+        display: flex;
+        flex-direction: column;
+    }
+
     img {
         border-radius: 20px;
         flex: 1;

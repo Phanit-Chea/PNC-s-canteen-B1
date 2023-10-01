@@ -1,8 +1,19 @@
 .service {
-    padding: 20px 90px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include responsive(tablet) {
+        padding: 20px 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    @include responsive(phone) {
+        padding: 20px 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
 
     .word {
         flex: 1;
@@ -26,6 +37,13 @@
         align-items: center;
         width: 50%;
         border-radius: 20px;
+        @include responsive(tablet) {
+            width: 80%;
+        }
+
+        @include responsive(phone) {
+            width: 100%;
+        }
 
         .meaning {
             display: flex;
