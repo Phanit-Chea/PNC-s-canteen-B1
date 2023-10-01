@@ -7,6 +7,7 @@ nav {
     top: 0;
     box-shadow: 2px 2px 4px white;
     z-index: 1;
+
     .nav-left {
         flex: 1;
 
@@ -15,7 +16,7 @@ nav {
             padding: 10px 80px;
             box-shadow: none;
 
-           
+
         }
     }
 
@@ -27,14 +28,20 @@ nav {
             align-items: center;
             justify-content: space-evenly;
             font-size: 20px;
+            display: inline-block;
+            box-shadow: 2px 1px 1px white;
 
             li {
+                display: inline-block;
+                background-color: white;
+                border-bottom: 4px solid orange;
+
                 a:hover {
                     color: purple;
                 }
             }
 
-            li:hover {
+             li:hover {
                 border-bottom: 3px solid orange;
             }
 
@@ -42,6 +49,7 @@ nav {
                 border: 3px solid orange;
                 padding: 5px 10px;
                 border-radius: 10px;
+
             }
 
             .feedback:hover {
@@ -58,6 +66,14 @@ nav {
 
     }
 }
-html{
+
+html {
     scroll-behavior: smooth;
+}
+li .add{
+    position: absolute;
+    display: block;
+}
+li .add li{
+    display: block;
 }

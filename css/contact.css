@@ -37,6 +37,13 @@ nav .nav-right ul {
   align-items: center;
   justify-content: space-evenly;
   font-size: 20px;
+  display: inline-block;
+  box-shadow: 2px 1px 1px white;
+}
+nav .nav-right ul li {
+  display: inline-block;
+  background-color: white;
+  border-bottom: 4px solid orange;
 }
 nav .nav-right ul li a:hover {
   color: purple;
@@ -59,6 +66,15 @@ nav .nav-right ul .feedback:hover a {
 
 html {
   scroll-behavior: smooth;
+}
+
+li .add {
+  position: absolute;
+  display: block;
+}
+
+li .add li {
+  display: block;
 }
 
 footer {
