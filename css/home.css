@@ -100,6 +100,11 @@ footer p {
   justify-content: space-around;
   padding: 5px;
 }
+@media screen and (max-width: 600px) {
+  .social-media {
+    justify-content: space-evenly;
+  }
+}
 
 .social-media img:nth-child(1),
 .social-media img:nth-child(2),
@@ -111,7 +116,7 @@ footer p {
   .social-media img:nth-child(1),
   .social-media img:nth-child(2),
   .social-media img:nth-child(3) {
-    width: 10px;
+    width: 30px;
   }
 }
 
