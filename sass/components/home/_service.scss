@@ -27,7 +27,6 @@
         span {
             color: $orange;
         }
-
     }
 
     .main-point {
@@ -37,12 +36,15 @@
         align-items: center;
         width: 50%;
         border-radius: 20px;
+
         @include responsive(tablet) {
             width: 80%;
+            background-color: $orange;
         }
 
         @include responsive(phone) {
             width: 100%;
+            background-color: $orange;
         }
 
         .meaning {
@@ -59,6 +61,10 @@
                     align-items: center;
                     padding: 5px;
                     border-radius: 60px;
+                    @include responsive(tablet){
+                        width: 40px;
+
+                    }
                 }
             }
 

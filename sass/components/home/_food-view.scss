@@ -3,11 +3,13 @@
     display: flex;
     gap: 40px;
     background-color: $orange;
-    @include responsive(tablet){
+
+    @include responsive(tablet) {
         display: flex;
         flex-direction: row;
     }
-    @include responsive(phone){
+
+    @include responsive(phone) {
         display: flex;
         flex-direction: column;
     }
@@ -18,6 +20,7 @@
         flex-direction: column;
         text-align: center;
         justify-content: center;
+
         h1 {
             padding-bottom: 10px;
         }
@@ -26,11 +29,13 @@
     .right {
         flex: 1;
         display: flex;
-        @include responsive(tablet){
+
+        @include responsive(tablet) {
             display: flex;
             flex-direction: column;
         }
-        @include responsive(phone){
+
+        @include responsive(phone) {
             display: flex;
             flex-direction: column;
             flex: 2;
@@ -72,10 +77,9 @@
                 background-position: center;
                 box-shadow: 2px 1px 1px $text-color;
             }
-
-            .card-food:hover {
-                cursor: pointer;
-            }
+        }
+        .card-food:hover {
+            cursor: pointer;
         }
     }
 }

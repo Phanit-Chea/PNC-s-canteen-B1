@@ -1,5 +1,5 @@
 footer {
-    background-color: $grey;
+    background-color: gray;
     display: flex;
     justify-content: space-around;
     padding: 10px;
@@ -8,9 +8,8 @@ footer {
 
 footer h2,
 footer p {
-    color: $text-color;
+    color: black;
     padding: 10px;
-   
 }
 
 .media-images,

@@ -8,11 +8,19 @@
   color: black;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 nav {
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: sticky;
+  top: 0;
+  box-shadow: 2px 2px 4px white;
+  z-index: 1;
 }
 nav .nav-left {
   flex: 1;
@@ -50,8 +58,12 @@ nav .nav-right ul .feedback:hover a {
   color: purple;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 footer {
-  background-color: grey;
+  background-color: gray;
   display: flex;
   justify-content: space-around;
   padding: 10px;
@@ -155,9 +167,9 @@ html {
   padding: 20px 100px;
   text-align: center;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
   .text-schedule {
-    padding: 10px 30px;
+    padding: 10px 10px;
   }
 }
 .text-schedule h1 {
@@ -205,6 +217,11 @@ html {
 .schedule .breakfast .picture img {
   width: 370px;
   margin: 10px 10px;
+}
+@media screen and (max-width: 1024px) {
+  .schedule .breakfast .picture img {
+    width: 100%;
+  }
 }
 .schedule .breakfast .menu {
   padding: 20px;
@@ -354,6 +371,11 @@ html {
   width: 210px;
   margin: 10px 10px;
 }
+@media screen and (max-width: 1024px) {
+  .menu-breakfast .group-food .card-food .top img {
+    width: 424px;
+  }
+}
 @media screen and (max-width: 600px) {
   .menu-breakfast .group-food .card-food .top img {
     width: 324px;
@@ -389,6 +411,11 @@ html {
 
 .menu-lunch {
   padding: 20px 100px;
+}
+@media screen and (max-width: 1024px) {
+  .menu-lunch {
+    padding: 10px 40px;
+  }
 }
 @media screen and (max-width: 600px) {
   .menu-lunch {
@@ -446,6 +473,11 @@ html {
 
 .soup-food {
   padding: 20px 100px;
+}
+@media screen and (max-width: 1024px) {
+  .soup-food {
+    padding: 10px 40px;
+  }
 }
 @media screen and (max-width: 600px) {
   .soup-food {
@@ -511,6 +543,11 @@ html {
 
 .menu-dinner {
   padding: 20px 100px;
+}
+@media screen and (max-width: 1024px) {
+  .menu-dinner {
+    padding: 10px 40px;
+  }
 }
 @media screen and (max-width: 600px) {
   .menu-dinner {
@@ -667,4 +704,4 @@ html {
   background-image: url(../../../images/ឆា.png);
   background-position: center;
   background-size: cover;
-}
+}/*# sourceMappingURL=about.css.map */
