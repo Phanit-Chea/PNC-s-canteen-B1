@@ -1,5 +1,5 @@
 footer {
-    background-image: linear-gradient($h1-bg, $h1-border);
+    background-color: $grey;
     display: flex;
     justify-content: space-around;
     padding: 10px;
@@ -8,7 +8,7 @@ footer {
 
 footer h2,
 footer p {
-    color: $white;
+    color: $text-color;
     padding: 10px;
    
 }

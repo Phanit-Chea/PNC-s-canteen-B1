@@ -51,7 +51,7 @@ nav .nav-right ul li:nth-child(3):hover a {
 }
 
 footer {
-  background-image: linear-gradient(rgba(98, 150, 217, 0.603), rgb(15, 79, 163));
+  background-color: grey;
   display: flex;
   justify-content: space-around;
   padding: 10px;
@@ -60,7 +60,7 @@ footer {
 
 footer h2,
 footer p {
-  color: white;
+  color: black;
   padding: 10px;
 }
 
