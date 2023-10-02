@@ -13,6 +13,10 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  box-shadow: 2px 2px 4px white;
 }
 nav .nav-left {
   flex: 1;
