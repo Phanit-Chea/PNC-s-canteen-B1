@@ -1,29 +1,33 @@
 .main {
-    background-color:$nav-bg;
+    background-color: $nav-bg;
     width: 50%;
     @include df-column;
-    @include responsive(tablet){
-            width: 100%;
+
+    @include responsive(tablet) {
+        width: 100%;
     }
-    @include responsive(phone){
-            width: 100%;
+
+    @include responsive(phone) {
+        width: 100%;
     }
 }
 
 .main h1 {
     font-size: 90px;
     color: $white;
-    @include responsive(phone){
-            font-size: 10px;
-            color: white;
+
+    @include responsive(phone) {
+        font-size: 10px;
+        color: white;
     }
 }
 
 .main p {
     color: $white;
     font-size: 25px;
-    @include responsive(phone){
-            font-size: 20px
+
+    @include responsive(phone) {
+        font-size: 20px
     }
 }
 

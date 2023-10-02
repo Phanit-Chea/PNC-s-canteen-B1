@@ -4,6 +4,16 @@
     gap: 40px;
     background-color: $orange;
 
+    @include responsive(tablet) {
+        display: flex;
+        flex-direction: row;
+    }
+
+    @include responsive(phone) {
+        display: flex;
+        flex-direction: column;
+    }
+
     .left {
         flex: 0.4;
         display: flex;
@@ -19,6 +29,17 @@
     .right {
         flex: 1;
         display: flex;
+
+        @include responsive(tablet) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        @include responsive(phone) {
+            display: flex;
+            flex-direction: column;
+            flex: 2;
+        }
 
         .card-food {
             border: 4px solid $orange;
@@ -56,10 +77,10 @@
                 background-position: center;
                 box-shadow: 2px 1px 1px $text-color;
             }
+        }
 
-            .card-food:hover {
-                cursor: pointer;
-            }
+        .card-food:hover {
+            cursor: pointer;
         }
     }
 }

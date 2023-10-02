@@ -22,39 +22,88 @@ nav {
   z-index: 1;
 }
 nav .nav-left {
-  flex: 1;
+  flex: 0.7;
 }
 nav .nav-left img {
   width: 90px;
   padding: 10px 80px;
   box-shadow: none;
 }
-nav .nav-right {
+
+.menu-bar {
   flex: 1;
+  height: 80px;
 }
-nav .nav-right ul {
+
+.menu-bar ul {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
+}
+
+.menu-bar ul li {
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+}
+
+.menu-bar ul li a {
+  color: purple;
   font-size: 20px;
 }
-nav .nav-right ul li a:hover {
-  color: purple;
+
+.menu-bar ul li a:hover {
+  border-bottom: 4px solid orange;
 }
-nav .nav-right ul li:hover {
-  border-bottom: 3px solid orange;
+
+.dropdown-menu {
+  position: absolute;
+  left: 500px;
+  top: 40px;
+  display: block;
 }
-nav .nav-right ul .feedback {
-  border: 3px solid orange;
-  padding: 5px 10px;
-  border-radius: 10px;
+
+.dropdown-menu {
+  display: none;
 }
-nav .nav-right ul .feedback:hover {
-  background-color: orange;
-  border: none;
+
+.dropdown-menu ul {
+  margin: 10px;
+  display: block;
 }
-nav .nav-right ul .feedback:hover a {
-  color: purple;
+
+.dropdown-menu ul li {
+  width: 150px;
+  padding: 10px;
+  background-color: white;
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 68%;
+  top: 57px;
+}
+
+.dropdown-menu ul {
+  display: block;
+  margin: 20px;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+
+.dropmenu-down-1 {
+  display: none;
+}
+
+.dropdown-menu ul li:hover .dropmenu-down-1 {
+  display: block;
+  position: absolute;
+  top: 83px;
+  left: 38%;
 }
 
 html {
@@ -62,7 +111,7 @@ html {
 }
 
 footer {
-  background-color: grey;
+  background-color: gray;
   display: flex;
   justify-content: space-around;
   padding: 10px;
@@ -86,6 +135,11 @@ footer p {
   justify-content: space-around;
   padding: 5px;
 }
+@media screen and (max-width: 600px) {
+  .social-media {
+    justify-content: space-evenly;
+  }
+}
 
 .social-media img:nth-child(1),
 .social-media img:nth-child(2),
@@ -93,10 +147,42 @@ footer p {
   width: 40px;
 }
 
+@media screen and (max-width: 600px) {
+  .social-media img:nth-child(1),
+  .social-media img:nth-child(2),
+  .social-media img:nth-child(3) {
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer h2 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer p {
+    font-size: 14px;
+  }
+}
+
 .about-us {
   padding: 20px 90px;
   display: flex;
   gap: 20px;
+}
+@media screen and (max-width: 1024px) {
+  .about-us {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about-us {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .about-us img {
   border-radius: 20px;
@@ -129,18 +215,44 @@ footer p {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 1024px) {
+  .chef .chef-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 600px) {
+  .chef .chef-info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 .chef .chef-info .info {
   background-color: orange;
 }
+@media screen and (max-width: 1024px) {
+  .chef .chef-info .info {
+    background-color: orange;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .chef .chef-info .info {
+    background-color: orange;
+    width: 100%;
+  }
+}
 .chef .chef-info .info img {
-  width: 400px;
+  width: 100%;
   height: 40vh;
 }
-.chef .chef-info .info .info h2 {
+.chef .chef-info .info h2 {
   padding: 10px;
   text-align: center;
 }
-.chef .chef-info .info .info p {
+.chef .chef-info .info p {
   padding: 10px;
   text-align: center;
 }
@@ -150,6 +262,18 @@ footer p {
   display: flex;
   gap: 40px;
   background-color: orange;
+}
+@media screen and (max-width: 1024px) {
+  .food-overview {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 600px) {
+  .food-overview {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .food-overview .left {
   flex: 0.4;
@@ -164,6 +288,19 @@ footer p {
 .food-overview .right {
   flex: 1;
   display: flex;
+}
+@media screen and (max-width: 1024px) {
+  .food-overview .right {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 600px) {
+  .food-overview .right {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+  }
 }
 .food-overview .right .card-food {
   border: 4px solid orange;
@@ -198,15 +335,27 @@ footer p {
   background-position: center;
   box-shadow: 2px 1px 1px black;
 }
-.food-overview .right .card-food .card-food:hover {
+.food-overview .right .card-food:hover {
   cursor: pointer;
 }
 
-.service {
-  padding: 20px 90px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+@media screen and (max-width: 1024px) {
+  .service {
+    padding: 20px 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .service {
+    padding: 20px 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 .service .word {
   flex: 1;
@@ -227,6 +376,18 @@ footer p {
   width: 50%;
   border-radius: 20px;
 }
+@media screen and (max-width: 1024px) {
+  .service .main-point {
+    width: 80%;
+    background-color: orange;
+  }
+}
+@media screen and (max-width: 600px) {
+  .service .main-point {
+    width: 100%;
+    background-color: orange;
+  }
+}
 .service .main-point .meaning {
   display: flex;
   align-items: center;
@@ -242,6 +403,11 @@ footer p {
   padding: 5px;
   border-radius: 60px;
 }
+@media screen and (max-width: 1024px) {
+  .service .main-point .meaning .img img {
+    width: 40px;
+  }
+}
 .service .main-point .meaning .text-des {
   flex: 1;
 }
@@ -254,4 +420,4 @@ footer p {
 
 body {
   background-color: white;
-}
+}/*# sourceMappingURL=home.css.map */

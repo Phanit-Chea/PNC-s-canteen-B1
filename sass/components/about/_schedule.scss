@@ -44,7 +44,7 @@
         .picture {
             img {
                 @include img-schedule;
-                @include resp(tablet){
+                @include responsive(tablet){
                     width: 100%;
                 }
 

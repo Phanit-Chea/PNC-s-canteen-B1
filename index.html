@@ -1,35 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<<<<<<< HEAD
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page</title>
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/home.css">
+=======
+    <title>Home Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans&family=Konkhmer+Sleokchher&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/dist/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans&display=swap" rel="stylesheet">
+>>>>>>> 9eb22b55b73ec1715b3de9d8a03225face04f9bf
 </head>
 <body>
     <nav>
         <div class="nav-left">
             <img src="../images/logo.png" alt="">
         </div>
-        <div class="nav-right">
+        <div class="menu-bar">
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./page/about.html">Food menu</a>
-                    <div class="another">
+                <li><a href="../index.html">HOME </a></li>
+                <li><a href="./page/about.html">MENU FOOD</a>
+                    <div class="dropdown-menu">
                         <ul>
                             <li><a href="#schedule">Schedule</a></li>
-                            <li><a href="#menu-breakfast">Menu food</a>
-                                <ul>
-                                    <li><a href="#menu-breakfast">Breakfast</a></li>
-                                    <li><a href="#menu-lunch">Lunch</a></li>
-                                    <li><a href="#menu-dinner">Dinner</a></li>
-                                </ul>
+                            <li><a href="#menu-breakfast">Food menu</a>
+                                <div class="dropmenu-down-1">
+                                    <ul>
+                                        <li><a href="#menu-breakfast">Breakfast</a></li>
+                                        <li><a href="#menu-lunch">Lunch</a></li>
+                                        <li><a href="#menu-dinner">dinner</a></li>
+                                    </ul>
+                                </div>
+                                
                             </li>
                         </ul>
                     </div>
                 </li>
-                <li class="feedback"><a href="./page/contact.html">Feedback</a></li>
+                <li><a href="./page/contact.html">FEEDBACK</a></li>
             </ul>
         </div>
     </nav>
@@ -40,13 +52,13 @@
                 <h1>Welcome to PNC'S CANTEEN</h1>
             </div>
             <div class="btn">
-                <p><a href="">View us</a></p>
+                <p><a href="#about">View us</a></p>
             </div>
         </div>
     </header>
     <div class="about-us">
         <img src="./images/Text-Picture.jpg" alt="">
-        <div class="info">
+        <div class="info" id="about">
             <h1>About us</h1>
             <p>What can we do for you?</p>
             <p>We have delicious food, quality, hygiene and reasonable prices.
@@ -178,15 +190,15 @@
             <h2>Contact</h2>
             <div class="social-media">
                 <div class="media-images">
-                    <img src="./images/-Fb-download.png" alt="">
+                    <img src="./images/-Fb-download.png" alt="" class="icon-md">
                 </div>
                 <div class="media-name">
-                    <a href="">Facebook</a>
+                    <a href="" >Facebook</a>
                 </div>
             </div>
             <div class="social-media">
                 <div class="media-images">
-                    <img src="./images/IS-instagram.png" alt="">
+                    <img src="./images/IS-instagram.png" alt="" class="icon-md">
                 </div>
                 <div class="media-name">
                     <a href="">Instagram</a>

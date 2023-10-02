@@ -8,6 +8,10 @@
   color: black;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 nav {
   background-color: white;
   display: flex;
@@ -15,47 +19,105 @@ nav {
   justify-content: center;
   position: sticky;
   top: 0;
+<<<<<<< HEAD
   z-index: 1;
   box-shadow: 2px 2px 4px white;
+=======
+  box-shadow: 2px 2px 4px white;
+  z-index: 1;
+>>>>>>> 9eb22b55b73ec1715b3de9d8a03225face04f9bf
 }
 nav .nav-left {
-  flex: 1;
+  flex: 0.7;
 }
 nav .nav-left img {
   width: 90px;
   padding: 10px 80px;
   box-shadow: none;
 }
-nav .nav-right {
+
+.menu-bar {
   flex: 1;
+  height: 80px;
 }
-nav .nav-right ul {
+
+.menu-bar ul {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
+}
+
+.menu-bar ul li {
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+}
+
+.menu-bar ul li a {
+  color: purple;
   font-size: 20px;
 }
-nav .nav-right ul li a:hover {
-  color: purple;
+
+.menu-bar ul li a:hover {
+  border-bottom: 4px solid orange;
 }
-nav .nav-right ul li:hover {
-  border-bottom: 3px solid orange;
+
+.dropdown-menu {
+  position: absolute;
+  left: 500px;
+  top: 40px;
+  display: block;
 }
-nav .nav-right ul .feedback {
-  border: 3px solid orange;
-  padding: 5px 10px;
-  border-radius: 10px;
+
+.dropdown-menu {
+  display: none;
 }
-nav .nav-right ul .feedback:hover {
-  background-color: orange;
-  border: none;
+
+.dropdown-menu ul {
+  margin: 10px;
+  display: block;
 }
-nav .nav-right ul .feedback:hover a {
-  color: purple;
+
+.dropdown-menu ul li {
+  width: 150px;
+  padding: 10px;
+  background-color: white;
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 68%;
+  top: 57px;
+}
+
+.dropdown-menu ul {
+  display: block;
+  margin: 20px;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+
+.dropmenu-down-1 {
+  display: none;
+}
+
+.dropdown-menu ul li:hover .dropmenu-down-1 {
+  display: block;
+  position: absolute;
+  top: 83px;
+  left: 38%;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 footer {
-  background-color: grey;
+  background-color: gray;
   display: flex;
   justify-content: space-around;
   padding: 10px;
@@ -79,11 +141,36 @@ footer p {
   justify-content: space-around;
   padding: 5px;
 }
+@media screen and (max-width: 600px) {
+  .social-media {
+    justify-content: space-evenly;
+  }
+}
 
 .social-media img:nth-child(1),
 .social-media img:nth-child(2),
 .social-media img:nth-child(3) {
   width: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  .social-media img:nth-child(1),
+  .social-media img:nth-child(2),
+  .social-media img:nth-child(3) {
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer h2 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer p {
+    font-size: 14px;
+  }
 }
 
 header {
@@ -159,9 +246,9 @@ html {
   padding: 20px 100px;
   text-align: center;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
   .text-schedule {
-    padding: 10px 30px;
+    padding: 10px 10px;
   }
 }
 .text-schedule h1 {
@@ -209,6 +296,11 @@ html {
 .schedule .breakfast .picture img {
   width: 370px;
   margin: 10px 10px;
+}
+@media screen and (max-width: 1024px) {
+  .schedule .breakfast .picture img {
+    width: 100%;
+  }
 }
 .schedule .breakfast .menu {
   padding: 20px;
@@ -358,6 +450,11 @@ html {
   width: 210px;
   margin: 10px 10px;
 }
+@media screen and (max-width: 1024px) {
+  .menu-breakfast .group-food .card-food .top img {
+    width: 424px;
+  }
+}
 @media screen and (max-width: 600px) {
   .menu-breakfast .group-food .card-food .top img {
     width: 324px;
@@ -393,6 +490,11 @@ html {
 
 .menu-lunch {
   padding: 20px 100px;
+}
+@media screen and (max-width: 1024px) {
+  .menu-lunch {
+    padding: 10px 40px;
+  }
 }
 @media screen and (max-width: 600px) {
   .menu-lunch {
@@ -450,6 +552,11 @@ html {
 
 .soup-food {
   padding: 20px 100px;
+}
+@media screen and (max-width: 1024px) {
+  .soup-food {
+    padding: 10px 40px;
+  }
 }
 @media screen and (max-width: 600px) {
   .soup-food {
@@ -515,6 +622,11 @@ html {
 
 .menu-dinner {
   padding: 20px 100px;
+}
+@media screen and (max-width: 1024px) {
+  .menu-dinner {
+    padding: 10px 40px;
+  }
 }
 @media screen and (max-width: 600px) {
   .menu-dinner {
@@ -671,4 +783,4 @@ html {
   background-image: url(../../../images/ឆា.png);
   background-position: center;
   background-size: cover;
-}
+}/*# sourceMappingURL=about.css.map */

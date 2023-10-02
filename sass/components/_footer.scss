@@ -1,5 +1,7 @@
+@import "../responsives/responsive";
+
 footer {
-    background-color: $grey;
+    background-color: gray;
     display: flex;
     justify-content: space-around;
     padding: 10px;
@@ -8,9 +10,8 @@ footer {
 
 footer h2,
 footer p {
-    color: $text-color;
+    color: black;
     padding: 10px;
-   
 }
 
 .media-images,
@@ -23,11 +24,34 @@ footer p {
     flex-direction: row;
     justify-content: space-around;
     padding: 5px;
+
+    @include responsive(phone) {
+        justify-content: space-evenly;
+    }
 }
 
 .social-media img:nth-child(1),
 .social-media img:nth-child(2),
 .social-media img:nth-child(3) {
     width: 40px;
-  
+}
+
+.social-media img:nth-child(1),
+.social-media img:nth-child(2),
+.social-media img:nth-child(3) {
+    @include responsive(phone) {
+        width: 30px;
+    }
+}
+
+footer h2 {
+    @include responsive(phone) {
+        font-size: 18px;
+    }
+}
+
+footer p {
+    @include responsive(phone) {
+        font-size: 14px;
+    }
 }
